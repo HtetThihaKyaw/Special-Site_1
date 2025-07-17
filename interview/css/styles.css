@@ -128,13 +128,63 @@ html {
     gap: 0;
 }
 
+.shitara_icon::after,
+.yoshitani_icon::after,
+.eguchi_icon::after,
+.htetaung_icon::after,
+.soyeon_icon::after{
+    content: '↓';
+    position: relative;
+    top: -205px;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    padding: 10px;
+    margin:0 auto;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.8);
+    width: 199px;
+    height: 15px;
+    border-radius: 100%;
+}
+
+.shitara_icon:hover::after,
+.yoshitani_icon:hover::after,
+.eguchi_icon:hover::after,
+.htetaung_icon:hover::after,
+.soyeon_icon:hover::after{
+    opacity: 3;
+    filter: brightness(80%);
+}
+
+
+.shitara_container,
+.yoshitani_container,
+.eguchi_container,
+.htetaung_container,
+.soyeon_container{
+    width: 199px;
+    height: 199px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+}
+
 .icons figure img{
     width: 199px;
     height: 199px;
     padding: 0;
     margin: 0;
     transition: transform 0.2s ease;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
     border-radius: 100px;
 }
 
@@ -222,6 +272,20 @@ html {
     border-radius: 20px;
 }
 
+.shitara_container_2,
+.yoshitani_container_2,
+.eguchi_container_2,
+.htetaung_container_2,
+.soyeon_container_2{
+    width: 460px;
+    height: 430px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
 .sidebar_1 img,
 .sidebar_2 img,
 .sidebar_3 img,
@@ -230,9 +294,7 @@ html {
     width: 460px;
     height: 430px;
     transition: transform 0.2s ease; 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
     border-radius: 20px;
-    margin-top: 50px;
 }
 
 .sidebar_1 img:hover,

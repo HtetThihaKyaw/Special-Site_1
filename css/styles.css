@@ -173,6 +173,7 @@ body,html{
     margin-top: 95px;
     margin-left: 175px;
     display: inline-block;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .head_s_container img {
@@ -252,6 +253,7 @@ body,html{
     position: relative;
     display: inline-block;
     border-radius: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .advantages_img figure img {

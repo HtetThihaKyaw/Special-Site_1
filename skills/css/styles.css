@@ -91,9 +91,7 @@ body,html{
 #kv_head3 {
     opacity: 0;
     transform: translateY(50px);
-    /* Move down initially */
-    transition: opacity 1s ease, transform 1s ease;
-    /* Smooth transition */
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 #kv_head3.visible {
@@ -218,9 +216,7 @@ body,html{
 .project_teams {
     opacity: 0;
     transform: translateY(50px);
-    /* Move down initially */
-    transition: opacity 1s ease, transform 1s ease;
-    /* Smooth transition */
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .project_teams.visible {
@@ -275,7 +271,7 @@ body,html{
 .seminar_icon::after,
 .hotpage_icon::after,
 .main_icon::after{
-    content: '⇩';
+    content: '↓';
     position: absolute;
     top: 71%;
     left: 50%;
@@ -384,7 +380,7 @@ body,html{
 .team_para {
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .team_para.visible {
@@ -697,7 +693,7 @@ body,html{
 #skill_catch {
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 #skill_catch.visible {

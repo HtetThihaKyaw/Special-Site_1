@@ -79,7 +79,7 @@ html {
     padding-top: 50px;
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 #kv_head2.visible {
@@ -137,14 +137,24 @@ html {
     /* padding: 20px; */
 }
 
-#body2 img {
-    border-radius: 20px;
-    padding: 0;
+#body2 .sup_img_container_1 {
     width: 500px;
     height: 320px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
     margin-top: 100px;
     margin-left: 230px;
     margin-right: 65px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+
+#body2 .sup_img_container_1 img {
+    border-radius: 20px;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: transform 0.3s ease;
 }
 
@@ -190,7 +200,7 @@ html {
 .hr_manners{
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .hr_manners.visible {
@@ -224,12 +234,22 @@ html {
     margin: 50px 160px;
 }
 
-.manners figure img {
+.manner_container_1,
+.manner_container_2,
+.manner_container_3{
     width: 200px;
     height: 157px;
     border-radius: 20px;
-    transition: transform 0.3s ease;
+    overflow: hidden;
+    position: relative;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.manners figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
 }
 
 .manners figure img:hover {
@@ -240,13 +260,47 @@ html {
     padding: 0;
 }
 
+.manner_icon_1::after,
+.manner_icon_2::after,
+.manner_icon_3::after{
+    content: '≫';
+    position: relative;
+    top: -38.8%;
+    left: -16.3%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    margin: 50px;
+    padding: 5px 87px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.1);
+    width: 200px;
+    height: 157px;
+    border-radius: 20px;
+}
+
+.manner_icon_1:hover::after,
+.manner_icon_2:hover::after,
+.manner_icon_3:hover::after{
+    opacity: 3;
+    filter: brightness(80%);
+}
+
 .manners figure figcaption {
     color: #494AE9;
     font-size: 24px;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 25px ;
+    padding-right: 100px;
     padding-bottom: 0;
 }
 
@@ -258,7 +312,7 @@ html {
     border-radius: 20px;
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .support_para.visible {
@@ -275,15 +329,25 @@ html {
     padding-bottom: 100px;
 }
 
+.jec_container,
+.window_container,
+.welcome_container{
+    width: 500px;
+    height: 320px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin-left: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
 .jec img {
     border-radius: 20px;
     margin-right: 50px;
     padding: 0;
     width: 500px;
     height: 320px;
-    margin-left: 250px;
     transition: transform 0.3s ease;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .jec img:hover {
@@ -352,10 +416,7 @@ html {
     padding: 0;
     width: 500px;
     height: 320px;
-    margin-left: 250px;
     transition: transform 0.3s ease;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-
 }
 
 .window img:hover {
@@ -401,7 +462,7 @@ html {
     border-radius: 20px;
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .support_para3.visible {
@@ -424,10 +485,7 @@ html {
     padding: 0;
     width: 500px;
     height: 320px;
-    margin-left: 250px;
     transition: transform 0.3s ease;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-
 }
 
 .welcome img:hover {
@@ -477,7 +535,7 @@ html {
     z-index: -10;
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 #sup_catch.visible {
@@ -485,15 +543,22 @@ html {
     transform: translateY(0);
 }
 
-#sup_catch img {
-    z-index: 1;
-    height: 500px;
-    width: 850px;
+.sup_img_container_2{
+    overflow: hidden;
+    position: relative;
     margin-top: 100px;
     margin-bottom: 50px;
+    height: 500px;
+    width: 850px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sup_img_container_2 img {
+    height: 100%;
+    width: 100%;
     border-radius: 20px;
     transition: transform 0.3s ease;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 #sup_catch img:hover {

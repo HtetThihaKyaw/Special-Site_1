@@ -1,66 +1,25 @@
-(function(){
-  'use strict';
-
-document.addEventListener("DOMContentLoaded", function() {
-    const elements = document.querySelectorAll('#kv_head3');
-    
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Stop observing once visible
-            }
+(function() {
+    'use strict';
+    document.addEventListener("DOMContentLoaded", () => {
+        const configs = [
+            { selector: '#kv_head3', threshold: 0.05 },
+            { selector: '.project_teams', threshold: 0.05 },
+            { selector: '.team_para', threshold: 0.05 },
+            { selector: '#skill_catch', threshold: 0.05 }
+        ];
+        configs.forEach(config => {
+            const elements = document.querySelectorAll(config.selector);
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: config.threshold });
+            elements.forEach(element => observer.observe(element));
         });
-    }, { threshold: 0.05 }); // Trigger when 20% of the element is visible
-
-    elements.forEach(element => observer.observe(element));
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    const elements = document.querySelectorAll('.project_teams');
-    
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target); 
-            }
-        });
-    }, { threshold: 0.05 });
-
-    elements.forEach(element => observer.observe(element));
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    const elements = document.querySelectorAll('.team_para');
-    
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target); 
-            }
-        });
-    }, { threshold: 0.05 }); 
-
-    elements.forEach(element => observer.observe(element));
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    const elements = document.querySelectorAll('#skill_catch');
-    
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target); 
-            }
-        });
-    }, { threshold: 0.05 }); 
-
-    elements.forEach(element => observer.observe(element));
-});
+    });
 
 document.addEventListener('DOMContentLoaded', () => {
     // Select all sections within .team_para
@@ -91,9 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-'use strict';
-
 document.addEventListener('DOMContentLoaded', () => {
     const kvHead3 = document.querySelector("#kv_head3");
     const targetSections = document.querySelectorAll('.event, .graphic, .seminar_t, .hotpage, .main');
@@ -114,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         targetSections.forEach(section => {
             const rect = section.getBoundingClientRect();
             // Trigger 100px before top reaches 0
-            if (rect.top <= 100 && rect.bottom > 0) {
+            if (rect.top <= 30 && rect.bottom > 0) {
                 anySectionInView = true;
             }
         });
