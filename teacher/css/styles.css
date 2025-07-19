@@ -55,7 +55,9 @@ html {
     font-size: 16px;
     font-weight: 500;
     display: block;
-    text-align: center;
+    text-align: center;    
+    transition: color 0.3s ease;
+
 }
 
 /* .nav ul li:hover{
@@ -71,6 +73,50 @@ html {
     background: linear-gradient(to right, #E6F4F1 0%, #C0CEFA 67%, #B8C6F5 100%);
 }
 
+
+
+/*Title*/
+
+.teacher_head{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+    background-color: #494AE9;
+    margin-top: 75px;
+    padding-top: 50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.teacher_head.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.teacher_head h1{
+    display: block;
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #494AE9;
+    font-family: 'Inter', sans-serif;
+    padding: 20px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    width: fit-content;
+    max-width: 90%;
+}
+
+.teacher_head h2{
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
 
 
 /*Footer*/

@@ -1,124 +1,111 @@
-(function(){
+(function() {
     'use strict';
 
-    document.addEventListener("DOMContentLoaded", function() {
-    const elements = document.querySelectorAll('.int_head');
-    
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Stop observing once visible
-            }
-        });
-    }, { threshold: 0.05 }); // Trigger when 20% of the element is visible
+    document.addEventListener('DOMContentLoaded', () => {
+        const intHead = document.querySelector('.int_head');
+        const container1 = document.querySelector('#shitara');
+        const navLinks = document.querySelectorAll('.nav li a');
+        const intHeadElements = document.querySelectorAll('.int_head');
+        const containerElements = document.querySelectorAll('.container_1, .container_2, .container_3, .container_4, .container_5');
+        const friendsCatchElements = document.querySelectorAll('.friends_catch');
 
-    elements.forEach(element => observer.observe(element));
-});
+        if (intHeadElements.length === 0) {
+            console.warn('No elements with class .int_head found. Check your HTML.');
+        } else {
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.05 });
 
+            intHeadElements.forEach(element => observer.observe(element));
+        }
 
+        if (containerElements.length === 0) {
+            console.warn('No elements with classes .container_1, .container_2, .container_3, .container_4, or .container_5 found. Check your HTML.');
+        } else {
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.05 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    const elements = document.querySelectorAll('.container_1, .container_2, .container_3, .container_4, .container_5');
-    
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Stop observing once visible
-            }
-        });
-    }, { threshold: 0.05 }); // Trigger when 20% of the element is visible
+            containerElements.forEach(element => observer.observe(element));
+        }
 
-    elements.forEach(element => observer.observe(element));
-});
+        if (friendsCatchElements.length === 0) {
+            console.warn('No elements with class .friends_catch found. Check your HTML.');
+        } else {
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.2 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    const elements = document.querySelectorAll('.friends_catch');
-    
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Stop observing once visible
-            }
-        });
-    }, { threshold: 0.2 }); // Trigger when 20% of the element is visible
+            friendsCatchElements.forEach(element => observer.observe(element));
+        }
 
-    elements.forEach(element => observer.observe(element));
-});
+        if (!intHead) {
+            console.warn('Element with class .int_head not found. Check your HTML.');
+            return;
+        }
+        if (!container1) {
+            console.warn('Element with id #shitara not found. Check your HTML.');
+            return;
+        }
+        if (navLinks.length === 0) {
+            console.warn('No navigation links with class .(nav li a found. Check your HTML.');
+            return;
+        }
 
+        const throttle = (func, limit) => {
+            let inThrottle;
+            return (...args) => {
+                if (!inThrottle) {
+                    func.apply(this, args);
+                    inThrottle = true;
+                    setTimeout(() => inThrottle = false, limit);
+                }
+            };
+        };
 
+        const handleScroll = throttle(() => {
+            const intHeadRect = intHead.getBoundingClientRect();
+            const container1Rect = container1.getBoundingClientRect();
+            const isNearTop = intHeadRect.top <= 40;
+            const isIntHeadAtTop = intHeadRect.top <= 0;
+            const isContainer1AtTop = container1Rect.top <= 0;
 
-document.addEventListener('DOMContentLoaded', () => {
-    const targetSection = document.querySelector(".int_head");
-    const navLinks = document.querySelectorAll('.nav li a');
+            navLinks.forEach(link => {
+                if (isNearTop && (!isIntHeadAtTop || (isIntHeadAtTop && !isContainer1AtTop))) {
+                    link.style.color = 'white';
+                } else {
+                    link.style.color = '#494AE9';
+                }
+            });
+        }, 100);
 
-    if (!targetSection) {
-        console.warn('Element with class .int_head not found. Check your HTML.');
-        return;
-    }
+        window.addEventListener('scroll', handleScroll);
 
-    window.addEventListener('scroll', () => {
-        const rect = targetSection.getBoundingClientRect();
-        const isAtTop = rect.top <= 0;
-
-        navLinks.forEach(link => {
-            if (isAtTop) {
+        const initialIntHeadRect = intHead.getBoundingClientRect();
+        const initialContainer1Rect = container1.getBoundingClientRect();
+        if (initialIntHeadRect.top <= 40 && (initialIntHeadRect.top > 0 || initialContainer1Rect.top > 0)) {
+            navLinks.forEach(link => {
                 link.style.color = 'white';
-            } else {
-                link.style.color = ''; // Reset to default or original color
-            }
-        });
+            });
+        } else {
+            navLinks.forEach(link => {
+                link.style.color = '#494AE9';
+            });
+        }
     });
-
-    // Initial check
-    const initialRect = targetSection.getBoundingClientRect();
-    if (initialRect.top <= 0) {
-        navLinks.forEach(link => {
-            link.style.color = 'white';
-        });
-    }
-});
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    const intHead = document.querySelector(".int_head");
-    const container1 = document.querySelector("#shitara");
-    const navLinks = document.querySelectorAll('.nav li a');
-
-    if (!intHead || !container1) {
-        console.warn('Elements .int_head or #shitara not found. Check your HTML.');
-        return;
-    }
-
-    window.addEventListener('scroll', () => {
-        const intHeadRect = intHead.getBoundingClientRect();
-        const container1Rect = container1.getBoundingClientRect();
-        const isIntHeadAtTop = intHeadRect.top <= 0;
-        const isContainer1AtTop = container1Rect.top <= 0;
-
-        navLinks.forEach(link => {
-            if (isIntHeadAtTop && !isContainer1AtTop) {
-                link.style.color = 'white';
-            } else {
-                link.style.color = '#494AE9'; // Original color, adjust as needed
-            }
-        });
-    });
-
-    // Initial check
-    const initialIntHeadRect = intHead.getBoundingClientRect();
-    const initialContainer1Rect = container1.getBoundingClientRect();
-    if (initialIntHeadRect.top <= 0 && initialContainer1Rect.top > 0) {
-        navLinks.forEach(link => {
-            link.style.color = 'white';
-        });
-    } else {
-        navLinks.forEach(link => {
-            link.style.color = '#494AE9'; // Original color
-        });
-    }
-});
-
 })();
