@@ -329,14 +329,13 @@ html {
   text-align: center;
 }
 
-.section_1 h3,
-.section_2 h3,
-.section_3 h3,
-.section_4 h3,
-.section_5 h3{
+.section_1 h2,
+.section_2 h2,
+.section_3 h2,
+.section_4 h2,
+.section_5 h2{
     color: #494AE9;
-    font: 24px;
-    font-weight: 800;
+    margin-bottom: 35px;
 }
 
 .section_1 p,
@@ -345,8 +344,8 @@ html {
 .section_4 p,
 .section_5 p{
     color: #494AE9;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 550;
 }
 
 
