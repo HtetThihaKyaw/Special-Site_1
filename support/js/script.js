@@ -1,6 +1,55 @@
 (function() {
     'use strict';
-    document.addEventListener("DOMContentLoaded", () => {
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const links = document.querySelectorAll('.popup-link2');
+        let modal = null;
+
+        console.log('Popup links found:', links.length);
+        if (links.length === 0) {
+            console.warn('No elements with class .popup-link found. Check your HTML.');
+        }
+
+        links.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const figure = this.closest('figure');
+                const header = figure.getAttribute('data-header');
+                let description = figure.getAttribute('data-description');
+
+                console.log('Raw description:', description);
+                description = description.replace(/\n/g, '<br>');
+
+                console.log('Processed description:', description);
+
+                if (!modal) {
+                    modal = document.createElement('div');
+                    modal.className = 'popup-modal';
+                    modal.innerHTML = `
+                        <div class="popup-content">
+                            <div class="popup-header">${header}</div>
+                            <div class="popup-image"><img src="${figure.getAttribute('data-image')}" alt="${header}"></div>
+                            <div class="popup-text">${description}</div>
+                            <button class="popup-close">×</button>
+                        </div>
+                    `;
+                    document.body.appendChild(modal);
+
+                    modal.querySelector('.popup-close').addEventListener('click', () => modal.style.display = 'none');
+                    modal.addEventListener('click', (e) => {
+                        if (e.target === modal) modal.style.display = 'none';
+                    });
+                } else {
+                    modal.querySelector('.popup-header').textContent = header;
+                    modal.querySelector('.popup-image img').setAttribute('src', figure.getAttribute('data-image'));
+                    modal.querySelector('.popup-image img').setAttribute('alt', header);
+                    modal.querySelector('.popup-text').innerHTML = description;
+                }
+
+                modal.style.display = 'flex';
+            });
+        });
+
         const configs = [
             { selector: '#kv_head2', threshold: 0.05 },
             { selector: '.hr_manners', threshold: 0.05 },
@@ -11,7 +60,7 @@
         ];
         configs.forEach(config => {
             document.querySelectorAll(config.selector).forEach(element => {
-                new IntersectionObserver(entries => {
+                new IntersectionObserver((entries, observer) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
                             entry.target.classList.add('visible');

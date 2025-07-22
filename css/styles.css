@@ -58,6 +58,19 @@ body,html{
     text-align: center;
 }
 
+.nav ul img{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 7px;
+    left: -600px;
+    transition: transform 0.3s ease;
+}
+
+.nav ul img:hover{
+    transform: scale(1.12);
+}
+
 /* .nav ul li:hover{
     transition: ease-in 0.2s;
 }
