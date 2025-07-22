@@ -224,6 +224,10 @@ body {
 
 .advantages figure {
     margin: 0;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
 }
 
 .adv_container_1,
@@ -277,10 +281,32 @@ body {
 }
 
 .advantages_img figure figcaption {
-    color: #494AE9;
+    color: #000;
     font: bolder 20px 'Inter', sans-serif;
     text-align: center;
     margin: 30px 0 100px;
+}
+
+.advantages figcaption {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;  
+}
+
+.advantages figcaption::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1.5px; 
+    background-color: #000;
+    transition: width 0.3s ease-in-out;
+}
+
+.advantages figcaption:hover::after {
+    width: 100%;
 }
 
 .popup-link {
@@ -1194,6 +1220,10 @@ body {
 
 .teams figure {
     position: relative;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;    
     margin: 0;
 }
 
@@ -1229,7 +1259,7 @@ body {
 .main_icon::after{
     content: '↓';
     position: absolute;
-    top: 71%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #494AE9;
@@ -1239,13 +1269,13 @@ body {
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
-    padding: 0 20px;
+    padding: 70px 20px 0 20px;
     margin: auto;
     text-align: center;
     backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.5);
-    width: 78%;
-    height: 30px;
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.1);
+    width: 80%;
+    height: 45%;
     border-radius: 20px;
 }
 
@@ -1254,19 +1284,42 @@ body {
 .seminar_icon:hover::after,
 .hotpage_icon:hover::after,
 .main_icon:hover::after{
-    opacity: 3;
+    opacity: 1;
     filter: brightness(80%);
 }
 
+.teams figcaption {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;  
+}
+
 .teams figure figcaption {
-    color: #494AE9;
-    font-size: 16px;
+    color: #000;
+    font-size: 18px;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     text-align: center;
     padding-top: 20px;
+    text-decoration: none;
 }
 
+
+.teams figcaption::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1.5px; 
+    background-color: #000;
+    transition: width 0.3s ease-in-out;
+}
+
+.teams figcaption:hover::after {
+    width: 100%;
+}
 
 /*Project Teams' Paragaraph*/
 
@@ -1822,10 +1875,12 @@ body {
 
 .manners {
     display: flex;
-    justify-content: space-around;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 50px 160px;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0;
+    gap: 50px;
 }
 
 .manner_container_1,
@@ -1859,8 +1914,8 @@ body {
 .manner_icon_3::after{
     content: '≫';
     position: relative;
-    top: -38.8%;
-    left: -16.3%;
+    top: -155px;
+    left: -16.5%;
     transform: translate(-50%, -50%);
     color: #fff;
     background-color: rgba(0, 0, 0, 0.4);
@@ -1871,7 +1926,7 @@ body {
     transition: opacity 0.3s ease;
     pointer-events: none;
     margin: 50px;
-    padding: 5px 87px;
+    padding: 65px 88px;
     text-align: center;
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.1);
@@ -1887,15 +1942,45 @@ body {
     filter: brightness(80%);
 }
 
+.manners figure {
+    margin: 0;
+    align-items: center;
+    text-align: center;
+} 
+
 .manners figure figcaption {
-    color: #494AE9;
-    font-size: 24px;
+    color: #000;
+    font-size: 22px;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     text-align: center;
+    align-items: center;
     padding-top: 25px ;
-    padding-right: 100px;
+    padding-right: 0;
     padding-bottom: 0;
+    margin-right: 100px;
+}
+
+.manners figcaption {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;  
+}
+
+.manners figcaption::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1.5px; 
+    background-color: #000;
+    transition: width 0.3s ease-in-out;
+}
+
+.manners figcaption:hover::after {
+    width: 100%;
 }
 
 
