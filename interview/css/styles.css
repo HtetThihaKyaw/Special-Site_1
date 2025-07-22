@@ -73,7 +73,7 @@ html {
 }
 
 
-/*Header*/
+/* Interview Header*/
 
 .int_head{
     opacity: 0;
@@ -116,7 +116,7 @@ html {
 }
 
 
-.icons {
+/* .icons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,6 +126,15 @@ html {
     margin-right: 170px;
     padding: 0;
     gap: 0;
+} */
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Reduced from 100px to 50px */
+  margin: 85px 170px 100px;
+  padding: 0;
 }
 
 .shitara_icon::after,

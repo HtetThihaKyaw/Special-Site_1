@@ -1,4 +1,4 @@
-(function() {
+(function () {
     'use strict';
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -11,7 +11,7 @@
         }
 
         links.forEach(link => {
-            link.addEventListener('click', function(event) {
+            link.addEventListener('click', function (event) {
                 event.preventDefault();
                 const figure = this.closest('figure');
                 const header = figure.getAttribute('data-header');
@@ -70,36 +70,6 @@
                 }, { threshold: config.threshold }).observe(element);
             });
         });
-
-        const kvHead2 = document.querySelector('#kv_head2');
-        const targetSections = document.querySelectorAll('.support_para, .support_para2, .support_para3');
-        const navLinks = document.querySelectorAll('.nav li a');
-
-        if (!kvHead2 || targetSections.length === 0) return;
-
-        window.addEventListener('scroll', () => {
-            const kvRect = kvHead2.getBoundingClientRect();
-            const isKvAtTop = kvRect.top <= 0;
-            const isKvPastBottom = kvRect.bottom <= 0;
-            let anySectionInView = false;
-
-            targetSections.forEach(section => {
-                if (section.getBoundingClientRect().top <= 50 && section.getBoundingClientRect().bottom > 0) anySectionInView = true;
-            });
-
-            navLinks.forEach(link => {
-                link.style.color = ((isKvAtTop && !isKvPastBottom) || anySectionInView) ? 'white' : '#494AE9';
-            });
-        });
-
-        const kvInitialRect = kvHead2.getBoundingClientRect();
-        let anySectionInViewInitial = false;
-        targetSections.forEach(section => {
-            if (section.getBoundingClientRect().top <= 100 && section.getBoundingClientRect().bottom > 0) anySectionInViewInitial = true;
-        });
-
-        navLinks.forEach(link => {
-            link.style.color = ((kvInitialRect.top <= 0 && kvInitialRect.bottom > 0) || anySectionInViewInitial) ? 'white' : '#494AE9';
-        });
     });
+
 })();
