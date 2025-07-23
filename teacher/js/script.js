@@ -24,40 +24,6 @@
 
 
 
-        // Scroll event for navigation links
-        const targetSection = document.querySelector('.teacher_head');
-        const navLinks = document.querySelectorAll('.nav li a');
-
-        if (!targetSection) {
-            console.warn('Element with class .teacher_head not found. Check your HTML.');
-            return;
-        }
-        if (navLinks.length === 0) {
-            console.warn('No navigation links with class .nav li a found. Check your HTML.');
-            return;
-        }
-
-        // Throttle function to limit scroll event frequency
-        const throttle = (func, limit) => {
-            let inThrottle;
-            return (...args) => {
-                if (!inThrottle) {
-                    func.apply(this, args);
-                    inThrottle = true;
-                    setTimeout(() => inThrottle = false, limit);
-                }
-            };
-        };
-
-        const handleScroll = throttle(() => {
-            const rect = targetSection.getBoundingClientRect();
-            const isNearTop = rect.top <= 40; // Trigger 50px before top
-
-            navLinks.forEach(link => {
-                link.style.color = isNearTop ? 'white' : ''; // Revert to CSS-defined color
-            });
-        }, 100);
-
-        window.addEventListener('scroll', handleScroll);
+        
     });
 })();
