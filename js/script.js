@@ -130,64 +130,22 @@
   //Teacher Page
 
   document.addEventListener('DOMContentLoaded', () => {
-        // IntersectionObserver for .teacher_head visibility
-        const elements = document.querySelectorAll('.teacher_head');
-        if (elements.length === 0) {
-            console.warn('No elements with class .teacher_head found. Check your HTML.');
-        } else {
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.2 });
-
-            elements.forEach(element => observer.observe(element));
-        }
-
-
-
-
-
-
-        // Scroll event for navigation links
-        const targetSection = document.querySelector('.teacher_head');
-        const navLinks = document.querySelectorAll('.nav li a');
-
-        if (!targetSection) {
-            console.warn('Element with class .teacher_head not found. Check your HTML.');
-            return;
-        }
-        if (navLinks.length === 0) {
-            console.warn('No navigation links with class .nav li a found. Check your HTML.');
-            return;
-        }
-
-        // Throttle function to limit scroll event frequency
-        const throttle = (func, limit) => {
-            let inThrottle;
-            return (...args) => {
-                if (!inThrottle) {
-                    func.apply(this, args);
-                    inThrottle = true;
-                    setTimeout(() => inThrottle = false, limit);
+    const elements = document.querySelectorAll('.teacher_head, .teacher_1, .teacher_2, .teacher_3, .teachers_catch');
+    if (elements.length === 0) {
+        console.warn('No target elements found. Check your HTML.');
+    } else {
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
                 }
-            };
-        };
-
-        const handleScroll = throttle(() => {
-            const rect = targetSection.getBoundingClientRect();
-            const isNearTop = rect.top <= 40; // Trigger 50px before top
-
-            navLinks.forEach(link => {
-                link.style.color = isNearTop ? 'white' : ''; // Revert to CSS-defined color
             });
-        }, 100);
+        }, { threshold: 0.2 });
 
-        window.addEventListener('scroll', handleScroll);
-    });
+        elements.forEach(element => observer.observe(element));
+    }
+     });
 
 
 
@@ -320,6 +278,19 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
+
+
+//Return to Top Button
+
+window.addEventListener('scroll', function() {
+    const topButton = document.getElementById('top');
+    if (window.scrollY >= 1000) {
+        topButton.classList.add('visible');
+    } else {
+        topButton.classList.remove('visible');
+    }
+});
 
 
 })();
