@@ -54,7 +54,7 @@
     });
 
     const configs = [
-      { selector: '.head_kv', threshold: 0.00 },
+      { selector: '.head_kv', threshold: 0.05 },
       { selector: '#head_para', threshold: 0.05 },
       { selector: '.advantages', threshold: 0.05 },
       { selector: '.home_manners', threshold: 0.05 },
@@ -80,9 +80,8 @@
     });
   });
 
-  document.addEventListener('DOMContentLoaded', () => {
-  window.scrollTo(0, 0); // Reset scroll position
-  // Rest of your code
+ window.addEventListener('load', () => {
+  window.scrollTo(0, 0);
 });
 
   document.addEventListener('DOMContentLoaded', () => {
