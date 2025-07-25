@@ -81,6 +81,11 @@
   });
 
   document.addEventListener('DOMContentLoaded', () => {
+  window.scrollTo(0, 0); // Reset scroll position
+  // Rest of your code
+});
+
+  document.addEventListener('DOMContentLoaded', () => {
     const intHead = document.querySelector('.int_head');
     const container1 = document.querySelector('#shitara');
     const intHeadElements = document.querySelectorAll('.int_head');
