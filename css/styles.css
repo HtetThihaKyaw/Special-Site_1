@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 html,
 body {
     scroll-behavior: smooth;
@@ -28,7 +29,7 @@ body {
     height: 75px;
     border-radius: 0 0 30px 30px;
     margin: 0;
-    padding-right: 165px;
+    padding-right: 115px;
 }
 
 .nav ul li {
@@ -48,11 +49,11 @@ body {
 }
 
 .nav ul img {
-    width: 70px;
-    height: 70px;
+    width: 120px;
+    height: 120px;
     position: fixed;
-    top: 0px;
-    left: 200px;
+    top: -20px;
+    left: 150px;
     transition: transform 0.3s ease;
 }
 
@@ -86,6 +87,11 @@ body {
     transition: opacity 1s ease, transform 1s ease;
 }
 
+/* .head_kv{
+    padding-top: 35px;
+
+} */
+
 .head_kv.visible,
 #head_para.visible,
 .advantages.visible,
@@ -97,43 +103,42 @@ body {
     transform: translateY(0);
 }
 
+.head_kv.visible{
+    overflow: hidden;
+}
+
 .head_kv img {
     width: 40%;
     height: 40%;
-    margin-top: 75px;
+    padding-top: 85px;
     margin-bottom: 50px;
+    margin-left: 50px;
+
 }
 
-.text1,
-.text2 {
+.text1{
     position: absolute;
-    top: 450px;
-    right: 100px;
+    top: 300px;
+    right: 70px;
     font: bold 48px 'Inter', sans-serif;
     margin: 0;
     text-align: center;
-}
-
-.text1 {
-    color: #494AE9;
-}
-
-.text2 {
     color: #fff;
-    top: 448px;
-    right: 102px;
+    text-shadow: 2px 2px 0 #494AE9;
 }
+
+
+
 
 /* Head Paragraph */
 #head_para {
     background: #494AE9;
     margin: 0;
-    margin-top: -12px !important;
+    /* margin-top: -12px !important; */
     overflow: auto;
     border-radius: 0 0 20px 20px;
 }
 
-#head_para h2,
 .advantages h3,
 .map h3,
 .faqs h1 {
@@ -150,11 +155,25 @@ body {
     max-width: 90%;
 }
 
+#head_para h2{
+    font: bold 32px 'Inter', sans-serif;
+    color: #494AE9;
+    text-align: center;
+    margin: 100px auto 0;
+    padding: 15px 20px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    width: fit-content;
+    max-width: 90%;
+}
+
 #head_s_para {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    margin: 50px auto 100px 50px;
+    margin: 0 auto 100px 50px;
 }
 
 
@@ -401,6 +420,7 @@ body {
     margin: 0;
     max-width: 500px;
     padding-right: 200px;
+    line-height: 2.8;
 }
 
 .home_manners p span {
@@ -779,6 +799,8 @@ body {
     margin-top: 20px;
 }
 
+
+
 /*Teachers' Interview*/
 
 .teacher_1,
@@ -898,6 +920,7 @@ body {
 .t_section_2 h2,
 .t_section_3 h2 {
     color: #494AE9;
+    text-shadow: 2px 2px 0 #a7baff;
     margin-bottom: 35px;
 }
 
@@ -1022,7 +1045,7 @@ body {
     padding: 0;
 }
 
-.shitara_icon::after,
+/* .shitara_icon::after,
 .yoshitani_icon::after,
 .eguchi_icon::after,
 .htetaung_icon::after,
@@ -1033,7 +1056,7 @@ body {
     left: 43%;
     transform: translate(-50%, -50%);
     color: #fff;
-    /* background-color: rgba(0, 0, 0, 0.4); */
+     background-color: rgba(0, 0, 0, 0.4); 
     font-size: 24px;
     font-weight: bold;
     font-family: Arial, sans-serif;
@@ -1057,7 +1080,7 @@ body {
 .soyeon_icon:hover::after {
     opacity: 3;
     filter: brightness(80%);
-}
+} */
 
 
 .shitara_container,
@@ -1231,6 +1254,7 @@ body {
 .section_4 h2,
 .section_5 h2 {
     color: #494AE9;
+    text-shadow: 2px 2px 0 #a7baff;
     margin-bottom: 35px;
 }
 
@@ -1420,6 +1444,14 @@ body {
     max-width: 90%;
 }
 
+.project_teams p{
+    color: #000;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
 .project_teams {
     opacity: 0;
     transform: translateY(50px);
@@ -1435,7 +1467,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 85px;
+    margin-top: 55px;
     margin-bottom: 100px;
     margin-left: 0;
     margin-right: 0;
@@ -2611,52 +2643,54 @@ body {
 }
 
 #top {
+    opacity: 0;
+    transform: translateY(50px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
     font-size: 35px;
     color: #494AE9;
-    position: fixed;
-    bottom: 10px;
-    right: 50px;
     z-index: 100;
-    opacity: 0;
-    transition: opacity 0.3s ease-in;
 }
 
 #top.visible {
     opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 #top ul {
     list-style: none;
-    padding: 35px;
+    padding: 0;
     margin: 0;
 }
 
 #top ul li {
-    background: #EFFCFF;
-    border: 1px solid #494AE9;
-    border-radius: 50%;
-    padding: 8px 13px;
     margin: 0 10px;
 }
 
 #top ul li a {
+    background: #EFFCFF;
+    border: 1px solid #494AE9;
+    border-radius: 50%;
+    padding: 8px 13px;
     text-decoration: none;
     color: #494AE9;
     line-height: 1;
-    display: block;
+    display: inline-block;
     text-align: center;
+    transition: 0.15s ease-in, border 0.15s ease-in, color 0.15s ease-in;
 }
 
-#top ul li:hover {
+#top ul li a:hover {
     background: #494AE9;
     border: 1px solid #fff;
-    transition: ease-in 0.15s;
+    color: #fff;
     cursor: pointer;
 }
 
-#top ul li:hover a {
-    color: #fff;
-}
 
 .schl_logo {
     margin-bottom: 40px;
@@ -2679,5 +2713,5 @@ body {
 }
 
 #footer p {
-    margin-left: 807px;
+    margin-left: 900px;
 }
