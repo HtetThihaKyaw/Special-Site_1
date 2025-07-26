@@ -62,6 +62,7 @@
       { selector: '.slide', threshold: 0.05 },
       { selector: '.map', threshold: 0.05 },
       { selector: '.faqs', threshold: 0.05 },
+      { selector: '.comment_1', threshold: 0.05 },
     ];
 
     configs.forEach((config) => {
@@ -151,6 +152,25 @@
         elements.forEach(element => observer.observe(element));
     }
      });
+
+     document.querySelectorAll('.teachers a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent default anchor behavior
+        const targetId = this.getAttribute('href'); // Get the href 
+        const targetElement = document.querySelector(targetId); // Find the target element
+
+        if (targetElement) {
+            const offset = 15; // 15px offset
+            const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY; 
+            const offsetPosition = elementPosition - offset; // Position 15px above
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
 
 
      //Interview Page

@@ -628,6 +628,7 @@ body {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 100px;
+    font-weight: 300;
 }
 
 
@@ -637,7 +638,6 @@ body {
 .teachers {
     display: flex;
     justify-content: space-around;
-    margin-top: 0;
     gap: 15px;
     margin: 0 100px !important;
 }
@@ -661,7 +661,7 @@ body {
 .mori_container {
     width: 336px;
     height: 518px;
-    border-radius: 20px;
+    border-radius: 30px;
     overflow: hidden;
     position: relative;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -689,12 +689,11 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
-    height: 530px;
+    height: 560px;
     background-color: #494AE9;
     padding: 20px;
     margin-top: 100px;
-    margin-bottom: 100px;
-    border-radius: 20px;
+    border-radius:20px 20px 0 0;
     /* opacity: 0;
   transform: translateY(50px);
   transition: opacity 1s ease, transform 1s ease; */
@@ -707,15 +706,11 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
-    height: 530px;
+    height: 565px;
     background-color: #494AE9;
     padding: 20px;
     margin-top: 100px;
-    margin-bottom: 0;
-    border-radius: 20px;
-    /* opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s ease, transform 1s ease; */
+    border-radius:20px 20px 0 0;
 }
 
 .teacher_1.visible,
@@ -729,7 +724,7 @@ body {
 .side_2,
 .side_3 {
     background-color: white;
-    padding: 10px;
+    padding:38px 30px 15px 30px; 
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -739,20 +734,21 @@ body {
 .side_1 img,
 .side_2 img,
 .side_3 img {
-    width: 476px;
+    width: 337px;
     height: 390px;
     transition: transform 0.3s ease;
+    border-radius: 20px;
 }
 
 .osanai_container_1,
 .sekine_container_1,
 .mori_container_1 {
-    width: 476px;
+    width: 337px;
     height: 390px;
     overflow: hidden;
     position: relative;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .side_1 img:hover,
@@ -798,7 +794,7 @@ body {
 .t_section_2 h2,
 .t_section_3 h2 {
     color: #494AE9;
-    text-shadow: 2px 2px 0 #a7baff;
+    text-shadow: 2px 1px 0 #a7baff;
     margin-bottom: 35px;
 }
 
@@ -808,6 +804,165 @@ body {
     color: #494AE9;
     font-size: 18px;
     font-weight: 550;
+}
+
+/*Students' Comments*/
+
+.comment_1{
+    display: flex;
+    justify-content: space-around;
+    background-color: #494AE9;
+    padding: 30px 20px 20px 20px;
+    border-radius: 0 0 20px 20px;
+    margin-top: 0;
+    gap: 25px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.comment_1.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.comment_p1,
+.comment_p2,
+.comment_p3,
+.comment_p4,
+.comment_p5,
+.comment_p6,
+.comment_p7,
+.comment_p8,
+.comment_p9{
+    padding: 25px 15px 25px 15px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 25px;
+}
+
+.s_comment_1,
+.s_comment_2,
+.s_comment_3,
+.s_comment_4,
+.s_comment_5,
+.s_comment_6,
+.s_comment_7,
+.s_comment_8,
+.s_comment_9{
+    background-color: #e6f0fa;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.s_comment_8{
+    margin-left: -10px;
+}
+
+.s_comment_2 p{
+    margin-left: -8px;
+}
+
+.s_comment_1,
+.s_comment_3{
+    margin-left: -14px;
+}
+
+.s_comment_4,
+.s_comment_5{
+    margin-left: -8px;
+}
+
+.s_comment_5 p{
+    margin-top: 30px;
+}
+
+.s_comment_4 p,
+.s_comment_6 p{
+    margin-top: 30px;
+}
+
+.s_comment_7 p,
+.s_comment_8 p,
+.s_comment_9 p{
+    margin-left: 20px;
+    margin-right: 25px;
+}
+
+.comment_p1 p,
+.comment_p3 p,
+.comment_p4 p,
+.comment_p5 p,
+.comment_p6 p,
+.comment_p7 p,
+.comment_p8 p,
+.comment_p9 p{
+    color: #494AE9;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 2;
+    text-align: center;
+}
+
+.comment_p2 p{
+    color: #494AE9;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 2;
+    padding-top: 35px;
+    text-align: center;
+}
+
+.s_comment_container_1,
+.s_comment_container_2,
+.s_comment_container_3,
+.s_comment_container_4,
+.s_comment_container_5,
+.s_comment_container_6,
+.s_comment_container_7,
+.s_comment_container_8,
+.s_comment_container_9{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+}
+
+.s_comment_container_7,
+.s_comment_container_8,
+.s_comment_container_9{
+    margin-top: 15px;
+}
+
+.comment_p1 img,
+.comment_p2 img,
+.comment_p3 img,
+.comment_p4 img,
+.comment_p5 img,
+.comment_p6 img,
+.comment_p7 img,
+.comment_p8 img,
+.comment_p9 img{
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    transition: transform 0.2s ease;
+    border-radius: 100px;
+}
+
+.comment_p1 img:hover,
+.comment_p2 img:hover,
+.comment_p3 img:hover,
+.comment_p4 img:hover,
+.comment_p5 img:hover,
+.comment_p6 img:hover,
+.comment_p7 img:hover,
+.comment_p8 img:hover,
+.comment_p9 img:hover{
+    transform: scale(1.05);
 }
 
 
@@ -827,9 +982,6 @@ body {
     align-items: center;
     flex-direction: column;
     border-radius:20px 20px 0 0;
-    /* opacity: 0; */
-    /* transform: translateY(50px); */
-    /* transition: opacity 1s ease, transform 1s ease; */
 }
 
 .teachers_catch.visible {
