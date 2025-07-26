@@ -57,6 +57,7 @@
       { selector: '.head_kv', threshold: 0.05 },
       { selector: '#head_para', threshold: 0.05 },
       { selector: '.advantages', threshold: 0.05 },
+      { selector: '.advantages_img', threshold: 0.05 },
       { selector: '.home_manners', threshold: 0.05 },
       { selector: '.manners', threshold: 0.05 },
       { selector: '.slide', threshold: 0.05 },
