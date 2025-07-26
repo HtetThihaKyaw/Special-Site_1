@@ -19,7 +19,7 @@ body {
     transform: translateX(-50%);
     width: 100%;
     background: linear-gradient(to right, #cbd7ff 2%, #a7baff 70%, #a7baff 100%);
-    border-radius: 0 0 30px 30px;
+    border-radius: 0 0 20px 20px;
 }
 
 .nav ul {
@@ -963,7 +963,7 @@ body {
     text-align: center;
     color: #fff;
     font: 450 16px 'Inter', sans-serif;
-    text-decoration: underline 1px #fff;
+    
 }
 
 /*Interview Paragraph*/
@@ -978,6 +978,21 @@ body {
     height: 700px;
     background-color: #494AE9;
     padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.container_3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    height: 700px;
+    background-color: #494AE9;
+    padding: 20px 20px 25px 20px;
     margin-top: 100px;
     margin-bottom: 100px;
     border-radius: 20px;
@@ -1026,7 +1041,6 @@ body {
 
 .sidebar_1 h2,
 .sidebar_2 h2,
-.sidebar_3 h2,
 .sidebar_4 h2,
 .sidebar_5 h2 {
     color: #494AE9;
@@ -1035,6 +1049,16 @@ body {
     text-align: center;
     border-radius: 20px;
     margin-top: 45px;
+}
+
+.sidebar_3 h2 {
+    color: #494AE9;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 45px;
+    margin-bottom: 0;
 }
 
 .shitara_container_2,
@@ -1102,7 +1126,7 @@ body {
 .section_4 h2,
 .section_5 h2 {
     color: #494AE9;
-    text-shadow: 2px 2px 0 #a7baff;
+    text-shadow: 2px 1px 0 #a7baff;
     margin-bottom: 35px;
 }
 
