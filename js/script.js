@@ -58,6 +58,7 @@
       { selector: '#head_para', threshold: 0.05 },
       { selector: '.advantages', threshold: 0.05 },
       { selector: '.home_manners', threshold: 0.05 },
+      { selector: '.manners', threshold: 0.05 },
       { selector: '.slide', threshold: 0.05 },
       { selector: '.map', threshold: 0.05 },
       { selector: '.faqs', threshold: 0.05 },
@@ -152,6 +153,28 @@
      });
 
 
+     //Interview Page
+
+     document.querySelectorAll('.icons a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent default anchor behavior
+        const targetId = this.getAttribute('href'); // Get the href 
+        const targetElement = document.querySelector(targetId); // Find the target element
+
+        if (targetElement) {
+            const offset = 15; // 15px offset
+            const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY; 
+            const offsetPosition = elementPosition - offset; // Position 15px above
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+
 
 
   //Skills Page
@@ -203,6 +226,26 @@ document.addEventListener('DOMContentLoaded', () => {
     // Observe each section
     sections.forEach(section => {
         observer.observe(section);
+    });
+});
+
+
+document.querySelectorAll('.teams a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent default anchor behavior
+        const targetId = this.getAttribute('href'); // Get the href (e.g., "#event")
+        const targetElement = document.querySelector(targetId); // Find the target element
+
+        if (targetElement) {
+            const offset = 150; // 15px offset
+            const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY; 
+            const offsetPosition = elementPosition - offset; // Position 15px above
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth' // Smooth scrolling
+            });
+        }
     });
 });
 
