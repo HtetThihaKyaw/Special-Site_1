@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Webデザイン科</title>
     <script src="js/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/68a93c8d8f.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="img/logo_1.png">
 </head>
@@ -16,12 +17,13 @@
         <header>
             <div class="nav">
                 <ul>
+                    <li class="logo">
                     <a href="index.html">
-                    <img src="img/logo_5.png" alt="Logo" id="logo"></a>
-                    <li><a href="teacher/index.html">先生紹介</a></li>
-                    <li><a href="interview/index.html">学生インタビュー</a></li>
-                    <li><a href="skills/index.html">学科の長所</a></li>
-                    <li><a href="support/index.html">サポート</a></li>
+                    <img src="img/logo_5.png" alt="Logo" id="logo"></a></li>
+                    <li class="li"><a href="teacher/index.html">先生紹介</a></li>
+                    <li class="li"><a href="interview/index.html">学生インタビュー</a></li>
+                    <li class="li"><a href="skills/index.html">学科の長所</a></li>
+                    <li class="li"><a href="support/index.html">サポート</a></li>
                 </ul>
             </div>
         </header>
@@ -29,9 +31,9 @@
 
         <main>
              <div class="head_kv">
-                <img src="img/header_1.png" alt="kv">
+                <img src="img/kv.png" alt="kv">
                 <p class="text1">
-    日本電子専門学校　Webデザイン科の<br>
+    日本電子専門学校　Webデザイン科<br>
     スペシャルサイト
                </p>
                <p class="text2">
@@ -51,6 +53,31 @@
                         （HTML、CSS、JavaScript）、モバイルとデスクトップ向<br>
                         けのレスポンシブデザインといったトピックを網羅します。
                     </p>
+                </div>
+            </section>
+
+            <section class="jobs">
+                <div class="job_header">
+                    <h3>Webデザイン科に関する職種</h3>
+                </div>
+                <div class="job_titles">
+                    <div class="job_1">
+                    <div class="job_container1">
+                    <img src="img/coder.png" alt="Coder"></div>
+                        <p>フロントエンドエンジニア</p>
+                        </div>
+
+                    <div class="job_2">
+                    <div class="job_container2">
+                    <img src="img/designer.png" alt="Designer"></div>
+                        <p>デザイナー</p></div>
+
+
+                    <div class="job_3">
+                    <div class="job_container3">
+                    <img src="img/director.png" alt="Director"></div>
+                        <p>ディレクター</p></div>
+                        
                 </div>
             </section>
 
@@ -98,13 +125,13 @@
                 </div>
             </section>
 
-            <section class="home_manners">
-                <img src="img/puzzle.jpg" alt="Puzzle" width="800px" height="500px">
+            <div class="home_manners">
+                <img src="img/puzzle.jpg" alt="Puzzle">
                 <p><span>技術スキル</span>     と    <span>  人間関係マナー</span>     を<br>学べる学科</p>
-            </section>
+            </div>
 
             <h3 class="slide">学生生活</h3>
-            <section class="imgs_slide">
+            <div class="imgs_slide">
                 <div class="img_train">
 
                     <img src="img/slide_1.png" alt="JEC WEEK">
@@ -119,7 +146,7 @@
                     <img src="img/slide_4.png" alt="Sports Festival">
                     <!-- Endless End -->
                 </div>
-            </section>
+            </div>
 
             <section class="map">
                 <h3>建物と場所</h3>
@@ -140,53 +167,84 @@
                 </div>
             </section>
 
-            <div class="faqs">
-                <h1>よくある質問</h1>
-                <ul>
-                    <li>
-                        <input type="checkbox">
-                        <i></i>
-                        <h2>留学生でも安心して就活できますか？</h2>
-                        <p>はい、留学生でも安心して就活できます！<br>
-                            JLPT N2レベルがあれば、多くの企業でコミュニケーションが可能ですし、<br>
-                            英語力や技術力が強ければ、N2でも外資系やスタートアップに応募できます。</p>
-                    </li>
-                    <li>
-                        <input type="checkbox">
-                        <i></i>
-                        <h2>ITの仕事に就くために、どのくらいの日本語レベルが必要ですか？</h2>
-                        <p>ITの仕事では、通常JLPT N2またはN1のレベルが求められることが多いです。<br>
-                            ただし、会社によっては英語力やプログラミングスキルが重視される場合もあります。<br>
-                            N2レベルの日本語なら、基本的なコミュニケーションは問題ありませんが、
-                            専門用語を学ぶとさらに有利です。</p>
-                    </li>
-                    <li>
-                        <input type="checkbox">
-                        <i></i>
-                        <h2>日本語がまだN3レベルですが、IT企業で働けますか？</h2>
-                        <p>N3レベルでも、英語が得意で技術力が高い場合、<br>
-                            国際的なIT企業やスタートアップで働くチャンスがあります。<br>
-                            ただし、日本の多くの企業はN2以上を希望します。<br>
-                            N3の学生は、日本語学校やオンラインコースで勉強を続けて、<br>
-                            N2を目指すことをおすすめします。<br>
-                            インターンシップで実務経験を積むのも良い方法です。</p>
-                    </li>
-                    <li>
-                        <input type="checkbox">
-                        <i></i>
-                        <h2>学生ビザから就労ビザに変更するのは難しいですか？IT企業で働けますか？</h2>
-                        <p>学生ビザから就労ビザに変更するのは、<br>
-                            難しくありませんが、準備が必要です。<br>
-                            まず、IT関連の仕事に内定をもらうことが大切です。<br>
-                            内定後、会社がビザ申請の書類をサポートしてくれます。<br>
-                            7大学のキャリアセンターや出入国在留管理局のウェブサイトで必要な書類を確認しましょう。<br>
-                            通常、卒業証明書や内定通知書が必要です。</p>
-                    </li>
-                </ul>
+           
+
+            
+            <div class="faq_header">
+                <h3>よくある質問</h3>
             </div>
+
+            <div class="faq-wrapper">
+            <div class="faq_3">
+        <div class="container-block">
+            <div class="faq" role="region" aria-expanded="false" id="faq1">
+                <span class="faq-question-container" role="button" aria-controls="answer1" tabindex="0">
+                    <p class="text-blk faq-questions">留学生でも安心して就活できますか？</p>
+                    <span class="openimg">▼</span>
+                </span>
+                <div class="answer-box" id="answer1">
+                    <p class="text-blk faq-answer">
+                        はい、留学生でも安心して就活できます！<br>
+                        JLPT N2レベルがあれば、多くの企業でコミュニケーションが可能ですし、<br>
+                        英語力や技術力が強ければ、N2でも外資系やスタートアップに応募できます。
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq" role="region" aria-expanded="false" id="faq2">
+                <span class="faq-question-container" role="button" aria-controls="answer2" tabindex="0">
+                    <p class="text-blk faq-questions">ITの仕事に就くために、どのくらいの日本語レベルが必要ですか？</p>
+                    <span class="openimg">▼</span>
+                </span>
+                <div class="answer-box" id="answer2">
+                    <p class="text-blk faq-answer">
+                        ITの仕事では、通常JLPT N2またはN1のレベルが求められることが多いです。<br>
+                        ただし、会社によっては英語力やプログラミングスキルが重視される場合もあります。<br>
+                        N2レベルの日本語なら、基本的なコミュニケーションは問題ありませんが、<br>専門用語を学ぶとさらに有利です。
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq" role="region" aria-expanded="false" id="faq3">
+                <span class="faq-question-container" role="button" aria-controls="answer3" tabindex="0">
+                    <p class="text-blk faq-questions">日本語がまだN3レベルですが、IT企業で働けますか？</p>
+                    <span class="openimg">▼</span>
+                </span>
+                <div class="answer-box" id="answer3">
+                    <p class="text-blk faq-answer">
+                        N3レベルでも、英語が得意で技術力が高い場合、<br>
+                        国際的なIT企業やスタートアップで働くチャンスがあります。<br>
+                        ただし、日本の多くの企業はN2以上を希望します。<br>
+                        N3の学生は、日本語学校やオンラインコースで勉強を続けて、
+                        N2を目指すことをおすすめします。<br>
+                        インターンシップで実務経験を積むのも良い方法です。
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq" role="region" aria-expanded="false" id="faq4">
+                <span class="faq-question-container" role="button" aria-controls="answer4" tabindex="0">
+                    <p class="text-blk faq-questions">学生ビザから就労ビザに変更するのは難しいですか？IT企業で働けますか？</p>
+                    <span class="openimg">▼</span>
+                </span>
+                <div class="answer-box" id="answer4">
+                    <p class="text-blk faq-answer">
+                        学生ビザから就労ビザに変更するのは、<br>
+                        難しくありませんが、準備が必要です。<br>
+                        まず、IT関連の仕事に内定をもらうことが大切です。<br>
+                        内定後、会社がビザ申請の書類をサポートしてくれます。<br>
+                        大学のキャリアセンターや出入国在留管理局のウェブサイトで必要な書類を確認しましょう。<br>
+                        通常、卒業証明書や内定通知書が必要です。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
         </main>
 
-        <footer>
+        <footer class="home_footer">
             <div id="footer">
                 <div id="top">
                     <ul>
