@@ -123,12 +123,12 @@ body {
     height: 100%;
     padding-top: 75px;
     margin-bottom: 100px;
-
+    border-radius: 30px;
 }
 
 .text1{
     position: absolute;
-    top: 300px;
+    top: 280px;
     right: 340px;
     font: bolder 48px 'Inter', sans-serif;
     margin: 0;
