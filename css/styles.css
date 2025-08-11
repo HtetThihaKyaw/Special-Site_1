@@ -2761,14 +2761,14 @@ main{
 }
 
 #footer address,
-#footer p {
+#copy_right p {
     color: #000;
     font: 16px/30px 'Inter', sans-serif;
     margin-left: 170px;
     max-width: 600px;
 }
 
-#footer p {
+#copy_right p {
     margin-left: 900px;
 }
 
@@ -2788,7 +2788,34 @@ main{
 }
 
 
+.oc_button {
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    margin-left: 950px;
+    bottom: 250px;
+    display: inline-block;
+    background-color: #494AE9;
+    color: white;
+    text-decoration: none;
+    padding: 20px 25px;
+}
 
+.oc_button p:hover {
+    transform: scale(1.07);
+}
+
+.oc_button p {
+    font-weight: 500;
+    margin:0;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.oc_button i {
+    color: white;
+    margin-left: 5px;
+}
 
 
 
@@ -3466,7 +3493,7 @@ main{
 
   /* Footer */
   #footer address,
-  #footer p,
+  #copy_right p,
   #footer_1 address,
   #footer_1 p {
     margin-left: 20px;
@@ -3474,7 +3501,7 @@ main{
     line-height: 24px;
   }
 
-  #footer p,
+  #copy_right p,
   #footer_1 p {
     margin-left: 20px;
   }
