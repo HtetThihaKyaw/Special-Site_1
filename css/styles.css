@@ -42,7 +42,7 @@ body {
     color: #000;
     padding: 17px 30px;
     text-decoration: none;
-    font: 510 16px 'Inter', sans-serif;
+    font: 510 17px 'Inter', sans-serif;
     display: block;
     text-align: center;
     transition: color 0.3s ease;
@@ -70,7 +70,9 @@ body {
     background: linear-gradient(to right, #E6F4F1 0%, #C0CEFA 67%, #B8C6F5 100%);
 }
 
-
+.nav ul li a.active{
+    color: #494AE9;
+}
 
 
 
@@ -2772,8 +2774,7 @@ main{
     margin-left: 900px;
 }
 
-#footer_1 address,
-#footer_1 p {
+#footer_1 address {
     color: #000;
     font: 16px/30px 'Inter', sans-serif;
     margin-left: 170px;
@@ -2781,24 +2782,20 @@ main{
     font-weight: 500;
 }
 
-#footer_1 p {
-    margin-left: 900px;
-    margin-top: 0;
-    font-weight: 500;
-}
 
 
 .oc_button {
     text-align: center;
     border-radius: 20px;
     position: absolute;
-    margin-left: 950px;
+    margin-left: 900px;
     bottom: 250px;
     display: inline-block;
     background-color: #494AE9;
     color: white;
     text-decoration: none;
-    padding: 20px 25px;
+    padding: 20px 25px;    
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .oc_button p:hover {
