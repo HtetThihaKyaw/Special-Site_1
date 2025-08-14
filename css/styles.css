@@ -2232,6 +2232,7 @@ main{
     margin: 0 auto;
     padding: 20px;
     padding-top: 0 !important;
+    margin: 0 50px 0 50px;
 }
 
 #body2 .sup_img_container_1 {
@@ -2241,7 +2242,7 @@ main{
     overflow: hidden;
     border-radius: 20px;
     margin-top: 100px;
-    margin-left: 230px;
+    margin-left: 300px;
     margin-right: 65px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
@@ -2263,9 +2264,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 0 20px 20px;
-    padding-left: 0;
-    padding-top: 0;
+    padding: 0 0 20px 20px;
     margin-top: 100px;
 }
 
@@ -2446,6 +2445,7 @@ main{
     margin: 0 auto;
     padding-top: 100px;
     padding-bottom: 100px;
+    margin: 0 50px 0 50px;
 }
 
 .jec_container,
@@ -2455,14 +2455,15 @@ main{
     height: 320px;
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    margin-left: 250px;
+    margin-left: 280px;
+    margin-right: 65px;
     overflow: hidden;
     position: relative;
 }
 
 .jec img {
     border-radius: 20px;
-    margin-right: 50px;
+    /* margin-right: 50px; */
     padding: 0;
     width: 500px;
     height: 320px;
@@ -2532,7 +2533,7 @@ main{
 
 .window img {
     border-radius: 20px;
-    margin-right: 50px;
+    /* margin-right: 50px; */
     padding: 0;
     width: 500px;
     height: 320px;
