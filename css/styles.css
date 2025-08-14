@@ -209,8 +209,9 @@ background-color: rgba(73, 74, 233, 0.8);
 #head_s_para {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin: -25px auto 100px 50px;
+    /* gap: 30px; */
+    margin: -25px auto 100px 75px;
+    padding-left: 100px;
 }
 
 
@@ -220,10 +221,14 @@ background-color: rgba(73, 74, 233, 0.8);
     overflow: hidden;
     position: relative;
     border-radius: 20px;
-    margin-left: 150px;
+    margin: 0 auto;
     margin-top: 95px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
+/* .head_s_container img{
+    padding-left: 100px;
+} */
 
 .map_container_1,
 .map_container_2,
@@ -250,6 +255,8 @@ background-color: rgba(73, 74, 233, 0.8);
     transition: transform 0.3s ease;
 }
 
+
+
 .head_s_container img:hover,
 .map figure img:hover,
 .map_img iframe:hover,
@@ -260,7 +267,7 @@ background-color: rgba(73, 74, 233, 0.8);
 #head_s_para p {
     color: #fff;
     font: bold 16px/40px 'Inter', sans-serif;
-    margin: 100px 0 0 20px;
+    margin: 100px 0 0 0;
 }
 
 /*Jobs Titles*/
@@ -347,29 +354,36 @@ background-color: rgba(73, 74, 233, 0.8);
   transition: transform 0.3s ease;
 }
 
+.job_container2,
+.job_container3 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .job_titles img:hover{
     transform: scale(1.05);
 }
 
 .job_titles p{
     text-align: center;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 600;
     color: #fff;
 }
+
 
 
 
 /* Home Small Icons */
 .advantages{
-    background-color: #fff;
+    background-color: #494AE9;
     border-radius: 20px;
     padding-top: 25px;
     margin-top: 100px;
 }
 .advantages h3 {
-    color: #fff;
-    background: #494AE9;
+    color: #494AE9;
+    background: #fff;
     border: none;
     margin-top: 75px !important;
 }
@@ -385,7 +399,7 @@ background-color: rgba(73, 74, 233, 0.8);
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 1s ease, transform 1s ease;
-  background-color: #fff;
+  background-color: #494AE9;
   padding: 25px 0 100px 0;
   border-radius: 20px;
 }
@@ -400,7 +414,7 @@ background-color: rgba(73, 74, 233, 0.8);
 .adv_3,
 .adv_4{
     padding: 25px;
-    background-color: #494AE9;
+    background-color: #fff;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -416,10 +430,10 @@ background-color: rgba(73, 74, 233, 0.8);
 .adv_2 h4,
 .adv_3 h4,
 .adv_4 h4{
-  font-size: 24px;
-  color: #fff;
+  font-size: 26px;
+  color: #494AE9;
   margin: 15px 0;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .adv_img_1,
@@ -433,6 +447,7 @@ background-color: rgba(73, 74, 233, 0.8);
     overflow: hidden;
     display: inline-block;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border: #494AE9 1px solid;
 }
 
 .adv_1 img,
@@ -457,12 +472,12 @@ background-color: rgba(73, 74, 233, 0.8);
 .adv_2 p,
 .adv_3 p,
 .adv_4 p{
-color: #fff;
+color: #494AE9;
   font-size: 16px;
   line-height: 25px;
   margin: 10px 0;
   max-width: 250px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 
@@ -484,9 +499,9 @@ color: #fff;
     color: #494AE9;
     font: bold 24px/250% 'Inter', sans-serif;
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
     max-width: 500px;
-    padding-right: 200px;
+    padding-right: 250px;
     line-height: 2.8;
 }
 
@@ -504,7 +519,8 @@ color: #fff;
 .home_manners img {
     width: 575px;
     height: 370px;
-    padding-left: 200px;
+    margin: 0 auto;
+    padding-left: 250px;
 }
 
 
@@ -555,7 +571,7 @@ color: #fff;
 
 .map figure figcaption {
     color: #fff;
-    font: bold 24px 'Inter', sans-serif;
+    font: bold 26px 'Inter', sans-serif;
     text-align: center;
     margin: 50px 0 25px 0;
 }
@@ -641,7 +657,7 @@ color: #fff;
 }
 
 .faq_3 .container-block {
-    max-width: 750px;
+    max-width: 850px;
     background-color: #fff;
     margin: 50px auto 100px auto; /* Top, right, bottom, left */
     padding: 20px;
@@ -679,7 +695,7 @@ opacity: 0;
 }
 
 .faq_3 .text-blk.faq-questions {
-    font-size: 20px;
+    font-size: 22px;
     color: #494AE9;
     font-weight: 600;
 }
@@ -705,11 +721,11 @@ opacity: 0;
 }
 
 .faq_3 .text-blk.faq-answer {
-    font-size: 16px;
+    font-size: 18px;
     color: #494AE9;
     line-height: 24px;
     padding: 0 10px;
-    font-weight: 425;
+    font-weight: 430;
 }
 
 /* Responsive Design */
