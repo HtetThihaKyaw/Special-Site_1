@@ -174,3 +174,21 @@
         window.scrollTo(0, 0);
     });
 })();
+
+
+//Mobile Version
+
+const menuList = document.querySelector('#menu');
+  const btnMenu = document.querySelector('#btn-menu');
+  
+  console.log(menuList,btnMenu);
+
+  btnMenu.addEventListener('click', e=> {
+    if(btnMenu.classList.contains('active')) {
+      btnMenu.classList.remove('active');
+    } else {
+      btnMenu.classList.add('active');
+    } 
+    // using 3 lines with if and else instead of one line
+    menuList.classList.toggle('active'); 
+  });
