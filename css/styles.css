@@ -2980,8 +2980,9 @@ main{
 
   #head_s_para p {
     margin: 30px 10px 20px 10px;
-    font-size: 13.2px;
+    font-size: 13px;
     line-height: 30px;
+    text-align: center;
   }
 
   .job_titles{
@@ -2998,7 +2999,7 @@ main{
   .jobs{
     margin-top: 50px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 35px;
 }
 
   .job_header h3{
@@ -3007,7 +3008,7 @@ main{
 
   .job_titles {
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
     margin-top: 30px;
   }
 
@@ -3016,13 +3017,15 @@ main{
   .job_3 {
     max-width: 100%;
     padding: 10px;
+    background-color: #fff;
+    box-shadow: none;
   }
 
   .job_container1,
   .job_container2,
   .job_container3 {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
   }
 
   .job_container2,
@@ -3032,12 +3035,15 @@ main{
 }
 
   .job_titles img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
   }
 
   .job_titles p{
-    font-size: 7.5px;
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 8.4px;
+    color: #494AE9;
   }
 
   .advantages_img {
