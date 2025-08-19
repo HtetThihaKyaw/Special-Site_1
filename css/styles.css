@@ -2960,7 +2960,8 @@ main{
 
   #head_s_para {
     grid-template-columns: 1fr;
-    margin: 0 20px 50px;
+    margin: 0 auto;
+    padding: 15px;
   }
 
   .head_s_container,
@@ -2973,37 +2974,70 @@ main{
   .adv_container_5 {
     width: 100%;
     height: 200px;
-    margin: 20px auto;
+    margin: 0 auto;
+    padding: 0;
   }
 
   #head_s_para p {
-    margin: 20px 10px;
-    font-size: 14px;
+    margin: 30px 10px 20px 10px;
+    font-size: 13.2px;
     line-height: 30px;
+  }
+
+  .job_titles{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .job_header h3{
+    font-size: 24px;
+  }
+
+  .jobs{
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+  .job_header h3{
+    margin: 0 auto;
   }
 
   .job_titles {
     flex-direction: column;
     gap: 30px;
+    margin-top: 30px;
   }
 
   .job_1,
   .job_2,
   .job_3 {
     max-width: 100%;
-    padding: 20px;
+    padding: 10px;
   }
 
   .job_container1,
   .job_container2,
   .job_container3 {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
   }
 
+  .job_container2,
+  .job_container3 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
   .job_titles img {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .job_titles p{
+    font-size: 7.5px;
   }
 
   .advantages_img {
