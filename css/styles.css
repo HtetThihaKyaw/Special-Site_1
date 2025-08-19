@@ -3028,6 +3028,10 @@ main{
     height: 70px;
   }
 
+  .job_container1{
+    margin-top: 10px;
+  }
+
   .job_container2,
   .job_container3 {
     margin-left: 0;
@@ -3042,7 +3046,7 @@ main{
   .job_titles p{
     padding-top: 10px;
     font-weight: 700;
-    font-size: 8.4px;
+    font-size: 12px;
     color: #494AE9;
   }
 
