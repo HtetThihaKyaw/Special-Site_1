@@ -3633,9 +3633,9 @@ main{
   }
 
   .oc_button{
-    position: absolute;
-    margin-left: 130px;
-    bottom: 270px;
+    position: relative;
+    margin-left: 110px;
+    bottom: 230px;
     padding: 15px 20px;
   }
 
