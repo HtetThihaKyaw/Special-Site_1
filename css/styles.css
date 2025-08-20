@@ -3182,6 +3182,7 @@ main{
 
   .faq_3 .container-block {
     max-width: 370px;
+    margin-bottom: 50px;
   }
 
   .faq_3 .text-blk.faq-questions {
@@ -3600,6 +3601,11 @@ main{
   }
 
   /* Footer */
+
+  #footer{
+    padding-top: 80px;
+  }
+
   #footer address,
   #copy_right p,
   #footer_1 address,
@@ -3618,6 +3624,8 @@ main{
     width: 200px;
     height: 30px;
     margin-bottom: 30px;
+    margin-right: 35px;
+    margin-left: 15px;
   }
 
   .web_logo {
@@ -3628,12 +3636,13 @@ main{
 
   .oc_button{
     position: absolute;
-    margin-left: 100px;
-    /* top: 100px; */
+    margin-left: 130px;
+    bottom: 270px;
+    padding: 15px 20px;
   }
 
   .oc_button p{
-    font-size: 8px;
+    font-size: 10px;
   }
 
   #copy_right{
@@ -3641,7 +3650,7 @@ main{
   }
 
   #top {
-    bottom: 35px;
+    bottom: 55px;
     right: 15px;
     font-size: 25px;
   }
