@@ -3605,7 +3605,7 @@ main{
   #footer_1 address,
   #footer_1 p {
     margin-left: 20px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
   }
 
@@ -3614,15 +3614,36 @@ main{
     margin-left: 20px;
   }
 
+  .schl_logo{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 30px;
+  }
+
   .web_logo {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     left: 10px;
   }
 
+  .oc_button{
+    position: absolute;
+    margin-left: 100px;
+    /* top: 100px; */
+  }
+
+  .oc_button p{
+    font-size: 8px;
+  }
+
+  #copy_right{
+    margin-top: 25px;
+  }
+
   #top {
-    bottom: 20px;
-    right: 20px;
+    bottom: 35px;
+    right: 15px;
     font-size: 25px;
   }
+
 }
