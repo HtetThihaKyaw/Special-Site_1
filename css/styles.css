@@ -373,6 +373,10 @@ background-color: rgba(73, 74, 233, 0.8);
     color: #fff;
 }
 
+.job_titles p br{
+    display: none;
+  }
+
 
 
 
@@ -700,6 +704,10 @@ opacity: 0;
     font-size: 22px;
     color: #494AE9;
     font-weight: 600;
+}
+
+.faq_3 .text-blk.faq-questions br{
+    display: none;
 }
 
 .faq_3 .openimg {
@@ -3053,6 +3061,10 @@ main{
     text-align: center;
   }
 
+  .job_titles p br{
+    display: block;
+  }
+
 
   .advantages{
     margin-top: 50px;
@@ -3066,7 +3078,7 @@ main{
   .advantages_img {
     flex-direction: column;
     gap: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 50px !important;
   }
 
   .adv_1,
@@ -3096,26 +3108,35 @@ main{
   .home_manners {
     flex-direction: column;
     height: auto;
-    padding: 20px;
+    padding-bottom: 30px;
   }
 
   .home_manners p {
     padding: 0 20px;
     max-width: 100%;
     font-size: 18px;
-    line-height: 2;
+    line-height: 3;
+    text-align: center;
   }
 
   .home_manners img {
-    width: 100%;
+    width: 380px;
     height: auto;
     padding-left: 0;
-    margin-top: 20px;
+    margin: 0 auto;
+    margin-top: 50px !important;
   }
+
+  .home_manners p span {
+    font-size: 16px;
+  }
+
+
+
 
   .map {
     height: auto;
-    padding: 20px;
+    padding-bottom: 30px;
   }
 
   .map_img {
@@ -3127,12 +3148,13 @@ main{
 
   .map_container_1,
   .map_container_2 {
-    width: 100%;
+    width: 300px;
     height: 200px;
   }
 
   .map figure figcaption {
     font-size: 16px;
+    margin: 15px 0 0 0;
   }
 
   .slide{
@@ -3158,13 +3180,39 @@ main{
     }
   }
 
+  .faq_3 .container-block {
+    max-width: 370px;
+  }
+
   .faq_3 .text-blk.faq-questions {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.faq_3 .text-blk.faq-questions br {
+    display: block; 
 }
 
   .faq_3 .text-blk.faq-answer {
+    font-size: 15px;
+    padding: 13px;
+    margin: 0 auto;
+    line-height: 23px;
+  }
+
+   .faq_3 .text-blk.faq-answer br{
+    display: none;
+  }
+
+  .faq_3 .openimg{
     font-size: 16px;
+    margin: 15px;
+  }
+
+  .faq_3 .faq{
+    margin-bottom: 0;
   }
 
 
