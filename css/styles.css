@@ -3610,12 +3610,11 @@ main{
   #copy_right p,
   #footer_1 address,
   #footer_1 p {
-    margin-left: 20px;
+    margin-left: 35px;
     font-size: 12px;
     line-height: 24px;
   }
 
-  #copy_right p,
   #footer_1 p {
     margin-left: 20px;
   }
@@ -3625,7 +3624,6 @@ main{
     height: 30px;
     margin-bottom: 30px;
     margin-right: 35px;
-    margin-left: 15px;
   }
 
   .web_logo {
@@ -3646,7 +3644,8 @@ main{
   }
 
   #copy_right{
-    margin-top: 25px;
+    margin: 0 auto;
+    margin-top: 25px !important;
   }
 
   #top {
