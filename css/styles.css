@@ -1657,6 +1657,10 @@ opacity: 0;
     font-weight: 500;
 }
 
+.mobile{
+    display: none;
+}
+
 
 /*Project Teams' Small Imgaes*/
 
@@ -2806,7 +2810,6 @@ main{
     font: 16px/30px 'Inter', sans-serif;
     margin-left: 170px;
     max-width: 600px;
-    font-weight: 500;
 }
 
 
@@ -3414,18 +3417,20 @@ main{
 
   /* Skills Page */
   #kv_head3 {
+    margin-top: 65px;
     height: auto;
-    padding: 20px;
+    padding-top: 20px;
   }
 
   #head3 h1 {
     font-size: 24px;
     padding: 15px;
+    margin: 30px auto 20px;
   }
 
   #head3 p {
-    font-size: 16px;
-    padding: 20px;
+    font-size: 13px;
+    padding: 15px;
   }
 
  #body3 {
@@ -3433,6 +3438,7 @@ main{
         text-align: center;
         gap: 20px;
         padding: 20px;
+        margin: 0;
     }
 
     .skill_img_container_1 img {
@@ -3446,18 +3452,45 @@ main{
   }
 
   #s_body3 {
-    margin-top: 20px;
+    margin-top: 0;
     padding: 15px;
   }
 
-  #s_body3 p {
-    padding-right: 0;
+  #s_body3 h3 {
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 15px 20px;
   }
 
+  #s_body3 p {
+    font-size: 14px;
+    padding-right: 0;
+    line-height: 28px;
+  }
+
+  .mobile{
+    display: block;
+  }
+
+
+  .project_teams h3 {
+    font-size: 18px;
+  }
+
+.project_teams p {
+    font-size: 14px;
+}
+
   .teams {
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
     margin: 20px 0;
+  }
+
+  .teams figcaption {
+    font-size: 12px;
+    margin-bottom: 10px;
   }
 
   .event_img_container,
@@ -3465,18 +3498,58 @@ main{
   .seminar_img_container,
   .hotpage_img_container,
   .main_img_container {
-    width: 150px;
-    height: 120px;
+    width: 120px;
+    height: 90px;
   }
 
   .teams figure img {
-    width: 150px;
-    height: 120px;
+    width: 120px;
+    height: 90px;
   }
 
   .team_para {
-    padding: 20px;
+    padding: 15px;
   }
+
+  .team_para .event,
+  .team_para .graphic,
+  .team_para .seminar_t,
+  .team_para .hotpage,
+  .team_para .main{
+    margin-top: 35px;
+    padding-bottom: 15px;
+  }
+
+  .event_para{
+    padding-top: 0;
+  }
+
+  .team_para .event h3,
+  .team_para .graphic h3,
+  .team_para .seminar_t h3,
+  .team_para .hotpage h3,
+  .team_para .main h3{
+    font-size: 18px;
+    margin: 0 auto;
+  }
+
+  .team_para .event p,
+  .team_para .graphic p,
+  .team_para .seminar_t p,
+  .team_para .hotpage p,
+  .team_para .main p{
+    font-size: 14px;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .event_icon::after,
+.graphic_icon::after,
+.seminar_icon::after,
+.hotpage_icon::after,
+.main_icon::after {
+    display: none;
+}
 
   .event,
   .graphic,
@@ -3505,9 +3578,18 @@ main{
     margin-right: 0;
   }
 
+  #skill_catch{
+    margin-top: 50px;
+  }
+
   #skill_catch img {
-    width: 100%;
-    height: auto;
+    width: 600px;
+    height: 250px;
+    align-items: center;
+  }
+
+  #skill_catch h3{
+    font-size: 24px;
   }
 
   /* Support Page */
@@ -3610,22 +3692,18 @@ main{
 
   /* Footer */
 
-  #footer{
+  #footer,#footer_1{
     padding-top: 80px;
   }
 
   #footer address,
   #copy_right p,
-  #footer_1 address,
-  #footer_1 p {
+  #footer_1 address {
     margin-left: 35px;
     font-size: 12px;
     line-height: 24px;
   }
 
-  #footer_1 p {
-    margin-left: 20px;
-  }
 
   .schl_logo{
     width: 200px;
