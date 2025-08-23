@@ -3430,7 +3430,7 @@ main{
 
   #head3 p {
     font-size: 13px;
-    padding: 15px;
+    padding: 15px 5px;
   }
 
  #body3 {
@@ -3538,7 +3538,7 @@ main{
   .team_para .seminar_t p,
   .team_para .hotpage p,
   .team_para .main p{
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
     padding-top: 15px;
   }
