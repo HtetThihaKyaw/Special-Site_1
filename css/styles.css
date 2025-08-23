@@ -2376,6 +2376,10 @@ main{
   border-radius: 20px;
 }
 
+.manner-desc {
+  display: none;
+}
+
 .manners.visible{
     opacity: 1;
     transform: translateY(0);
@@ -3654,16 +3658,72 @@ main{
   }
 
   .manners {
-    flex-direction: column;
-    gap: 30px;
-    padding: 15px;
-  }
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.manners > div {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.manners img {
+  max-width: 130px;
+  height: 130px;
+}
+
+.manners h3{
+  font-size: 16px;
+  text-shadow: none;
+  font-weight: 600px;
+}
+
+.manners p {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+.manners .desc {
+  display: none;
+}
+
+
+.manner-desc {
+  display: block;
+  background-color: #494AE9;
+  border-radius: 0 0 20px 20px;
+  margin-top: 0;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.6;
+  font-weight: 500;
+  transform: translateX(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
 
   .manner_1,
   .manner_2,
   .manner_3 {
     max-width: 100%;
-    padding: 20px;
+    padding: 10px;
+  background-color: #fff;
+  box-shadow: none;
+  border-radius: 20px 20px 0 0;
+  padding-top: 20px !important;
+  }
+
+  .manner_1 h3, .manner_2 h3, .manner_3 h3 {
+  font-size: 16px;
+  color: #494AE9;
   }
 
   .manner1_container,
@@ -3679,6 +3739,30 @@ main{
     width: 120px;
     height: 120px;
   }
+
+.manners > div {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.7s; 
+}
+
+
+.manners > div.active {
+  background-color: #494AE9; 
+  border-radius: 20px 20px 0 0;  
+  transform: translateY(0);   
+  transition: opacity 0.7s ease, transform 0.7s ease; 
+}
+
+.manners > div.active h3 {
+  color: #fff;
+}
+
+
+
+
 
   .jec,
   .window,

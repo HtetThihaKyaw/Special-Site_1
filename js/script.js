@@ -192,3 +192,59 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener
         navMenu.classList.remove("active");
     })
 )
+
+
+const items = document.querySelectorAll('.manners > div');
+const descBox = document.querySelector('.manner-desc');
+
+// Show first paragraph by default
+if (items.length > 0) {
+  const firstText = items[0].querySelector('p').innerHTML;
+  descBox.innerHTML = firstText;
+  items[0].classList.add('active');
+}
+
+// When clicking an image, update the descBox
+items.forEach(item => {
+  item.addEventListener('click', function() {
+    const text = this.querySelector('p').innerHTML;
+    descBox.innerHTML = text;
+
+    // highlight active item (optional)
+    items.forEach(el => el.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const items = document.querySelectorAll('.manners > div');
+  const descBox = document.querySelector('.manner-desc');
+
+  // Show first paragraph by default
+  if (items.length > 0) {
+    descBox.innerHTML = items[0].querySelector('p').innerHTML;
+    descBox.classList.add('show');
+    items[0].classList.add('active');
+  }
+
+  // On click, update text with left-slide animation
+  items.forEach(item => {
+    item.addEventListener('click', function() {
+      // Hide first
+      descBox.classList.remove('show');
+
+      setTimeout(() => {
+        // Update text
+        descBox.innerHTML = this.querySelector('p').innerHTML;
+
+        // Show again with animation
+        descBox.classList.add('show');
+      }, 200); // match timing for smoothness
+
+      // Highlight active item
+      items.forEach(el => el.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+});
+
