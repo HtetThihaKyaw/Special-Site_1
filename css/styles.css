@@ -3437,7 +3437,8 @@ main{
         grid-template-columns: 1fr;
         text-align: center;
         gap: 20px;
-        padding: 20px;
+        padding: 15px;
+        padding-top: 0 !important;
         margin: 0;
     }
 
@@ -3453,7 +3454,7 @@ main{
 
   #s_body3 {
     margin-top: 0;
-    padding: 15px;
+    padding: 0 !important;
   }
 
   #s_body3 h3 {
@@ -3466,6 +3467,7 @@ main{
     font-size: 14px;
     padding-right: 0;
     line-height: 28px;
+    padding: 15px 0;
   }
 
   .mobile{
@@ -3475,6 +3477,7 @@ main{
 
   .project_teams h3 {
     font-size: 18px;
+    margin-top: -30px !important;
   }
 
 .project_teams p {
@@ -3594,23 +3597,31 @@ main{
 
   /* Support Page */
   #kv_head2 {
+    margin-top: 65px;
+    margin-bottom: 50px;
     height: auto;
-    padding: 20px;
+    padding-top: 20px;
   }
 
   #head2 h1 {
     font-size: 24px;
     padding: 15px;
+    margin: 30px auto 20px !important;
   }
 
   #head2 p {
-    font-size: 16px;
-    margin: 20px 10px;
+    font-size: 13px;
+    padding: 15px 5px;
+    margin-top: 0;
   }
 
   #body2 {
-    grid-template-columns: 1fr;
-    padding: 15px;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+        padding: 15px;
+        padding-top: 0 !important;
+        margin: 0;
   }
 
   #body2 .sup_img_container_1 {
@@ -3619,8 +3630,21 @@ main{
     margin: 20px auto;
   }
 
+  #s_body2 {
+    margin-top: 0;
+    padding: 0 !important;
+  }
+
+  #s_body2 h3 {
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 15px 20px;
+  }
+
   #s_body2 p {
-    padding-right: 0;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 15px 0;
   }
 
   .hr_manners h4 {
@@ -3663,6 +3687,10 @@ main{
     padding: 15px;
   }
 
+  .jec{
+    margin: 0 !important;
+  }
+
   .jec_container,
   .window_container,
   .welcome_container {
@@ -3678,16 +3706,53 @@ main{
     height: 200px;
   }
 
+  .jec_para h3,
+  .window_para h3,
+  .welcome_para h3{
+    font-size: 18px;
+    margin: 0 auto;
+  }
+
   .jec_para p,
   .window_para p,
   .welcome_para p {
-    padding-right: 0;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 0 !important;
+    line-height: 25px;
+  }
+
+  .welcome_para{
+    padding:20px !important;
+  }
+
+  .jec,
+  .welcome,
+  .window{
+    margin-top: -50px !important;
+  }
+
+  #sup_catch{
+    margin-top: 50px !important;
+    padding: 0 10px;
+    padding-top: 40px !important;
   }
 
   .sup_img_container_2 {
     width: 100%;
     height: 200px;
     margin: 20px auto;
+  }
+
+    #sup_catch img {
+    width: 100%;
+    height: 200px;
+    align-items: center;
+  }
+
+  #sup_catch h3{
+    font-size: 24px;
   }
 
   /* Footer */
