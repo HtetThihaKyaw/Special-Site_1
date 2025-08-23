@@ -107,7 +107,8 @@
             { selector: '#kv_head2', threshold: 0.05 },
             { selector: '.hr_manners', threshold: 0.05 },
             { selector: '.support_para, .support_para2, .support_para3', threshold: 0.05 },
-            { selector: '#sup_catch', threshold: 0.05 },
+            { selector: '#sup_catch', threshold: 0.05 }, 
+            { selector: '.manner-desc', threshold: 0.05 },
         ];
 
         observerConfigs.forEach((config) => {
