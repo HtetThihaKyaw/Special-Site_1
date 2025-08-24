@@ -3468,7 +3468,7 @@ main{
   }
 
   #s_body3 p {
-    font-size: 14px;
+    font-size: 12px;
     padding-right: 0;
     line-height: 28px;
     padding: 15px 0;
@@ -3583,6 +3583,7 @@ main{
   .team_para .hotpage p,
   .team_para .main p {
     margin-right: 0;
+    line-height: 28px;
   }
 
   #skill_catch{
@@ -3672,9 +3673,16 @@ main{
   cursor: pointer;
 }
 
+.manner1_container,
+.manner2_container,
+.manner3_container{
+    width: 120px;
+    height: 105px;
+}
+
 .manners img {
-  max-width: 130px;
-  height: 130px;
+    width: 120px;
+    height: 105px;
 }
 
 .manners h3{
@@ -3701,6 +3709,7 @@ main{
   border-radius: 0 0 20px 20px;
   margin-top: 0;
   padding: 15px;
+  padding-top: 25px;
   text-align: center;
   font-size: 14px;
   color: #fff;
@@ -3744,9 +3753,11 @@ main{
   flex: 1;
   text-align: center;
   cursor: pointer;
-  padding: 10px;
+  padding: 5px;
   transition: background-color 0.7s; 
 }
+
+
 
 
 .manners > div.active {
