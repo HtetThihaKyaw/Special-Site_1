@@ -406,6 +406,9 @@ background-color: rgba(73, 74, 233, 0.8);
     margin-top: 75px !important;
 }
 
+.adv_desc_display{
+  display: none;
+}
 
 .advantages_img{
     display: flex;
@@ -839,6 +842,10 @@ opacity: 0;
 
 
 /*Teacher Profiles*/
+
+.slide-btn {
+  display: none;
+}
 
 .teachers {
     display: flex;
@@ -3081,6 +3088,55 @@ main{
   }
 
 
+
+  .advantages_img > div {
+    flex: 1 1 45%;
+  }
+  .advantages_img img {
+    width: 100px;
+    height: 90px;
+  }
+  .advantages_img h4 {
+    font-size: 14px;
+  }
+  .adv_desc_display {
+    font-size: 13px;
+  }
+
+
+  .advantages_img {
+    flex-direction: column;
+  }
+  .advantages_img > div {
+    flex: 1 1 100%;
+  }
+  .advantages_img img {
+    width: 90px;
+    height: 80px;
+  }
+  .advantages_img h4 {
+    font-size: 16px;
+  }
+  
+
+  .adv_desc_display {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color: #494AE9;
+  border-radius: 0 0 20px 20px;
+  margin-top: 0;
+  padding: 20px 10px 30px 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  line-height: 1.6;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+
   .advantages{
     margin-top: 50px;
     padding-top: 50px;
@@ -3091,9 +3147,38 @@ main{
   }
 
   .advantages_img {
-    flex-direction: column;
-    gap: 30px;
-    margin-bottom: 50px !important;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 0;
+    margin-bottom: 20px !important;
+    margin-top: 0 !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  }
+
+.advantages_img::-webkit-scrollbar {
+  display: none;
+}
+
+.advantages_img > div {
+  flex: 0 0 auto;
+  min-width: 100px; /* adjust to your design */
+}
+
+.advantages_img {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+
+  .advantages_img .desc{
+    display: none;
+  }
+
+  .adv_desc_display{
+    display: block;
   }
 
   .adv_1,
@@ -3102,28 +3187,41 @@ main{
   .adv_4 {
     max-width: 100%;
     padding: 20px;
+    box-shadow: none;
   }
 
   .adv_img_1,
   .adv_img_2,
   .adv_img_3,
   .adv_img_4 {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
 
   .adv_1 img,
   .adv_2 img,
   .adv_3 img,
   .adv_4 img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
+
+  .adv_1 h4,
+.adv_2 h4,
+.adv_3 h4,
+.adv_4 h4{
+  margin-top: 5px;
+}
+
+
+
+
 
   .home_manners {
     flex-direction: column;
     height: auto;
     padding-bottom: 30px;
+    margin-top: 50px;
   }
 
   .home_manners p {
@@ -3238,29 +3336,31 @@ main{
 
   /* Teacher Page */
   .teacher_head {
-    padding: 20px;
+    margin-top: 65px;
+    height: auto;
+    padding-top: 20px;
   }
 
   .teacher_head h1 {
     font-size: 24px;
     padding: 15px;
+    margin: 30px auto 20px;
   }
 
   .teacher_head p {
-    font-size: 16px;
-    margin: 20px 10px;
+    font-size: 13px;
+    padding: 15px 5px;
+    margin: 0;
   }
 
-  .teachers {
-    flex-direction: column;
-    margin: 0 20px !important;
-  }
+
+
 
   .osanai_container,
   .sekine_container,
   .mori_container {
-    width: 100%;
-    height: 300px;
+    width: 136px;
+    height: 218px;
   }
 
   .teacher_1,
@@ -3349,9 +3449,13 @@ main{
     padding-top: 50px;
   }
 
+
+
   /* Interview Page */
   .int_head {
-    padding: 20px;
+    padding: 15px;
+    padding-top: 50px;
+    margin-top: 65px;
   }
 
   .int_head h1 {
@@ -3360,29 +3464,55 @@ main{
   }
 
   .int_head h2 {
-    font-size: 16px;
+    font-size: 13px;
     margin: 20px 10px;
   }
 
   .icons {
-    flex-direction: column;
-    margin: 0 20px 50px;
-    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
   }
+
+  .icons figure {
+    margin: 0;  
+  flex-shrink: 0;   
+  text-align: center;
+}
+
+.soyeon_p,
+.htetaung_p,
+.eguchi_p,
+.yoshitani_p,
+.shitara_p{
+  font-size: 10px;
+}
 
   .shitara_container,
   .yoshitani_container,
   .eguchi_container,
   .htetaung_container,
   .soyeon_container {
-    width: 150px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
+    align-items: center;
   }
 
   .icons figure img {
-    width: 150px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
   }
+  
+.icons figcaption {
+  font-size: 10px;
+  padding-bottom: 30px;
+  text-align: center;
+}
 
   .container_1,
   .container_2,
@@ -3413,10 +3543,23 @@ main{
     height: 200px;
   }
 
+  .container_1{
+    margin-bottom: 0px;
+  }
+
+  .friends_catch{
+    margin-top: 50px;
+  }
+
   .friends_catch img {
     width: 100%;
-    height: auto;
+    height: 300px;
+    align-items: center;
     padding-top: 50px;
+  }
+
+  .friends_catch h3{
+    font-size: 24px;
   }
 
   /* Skills Page */

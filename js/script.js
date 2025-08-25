@@ -249,3 +249,23 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const advItems = document.querySelectorAll('.advantages_img > div:not(.adv_desc_display)');
+  const advDesc = document.querySelector('.adv_desc_display');
+
+  if (advItems.length > 0) {
+    advDesc.innerHTML = advItems[0].querySelector('p').innerHTML;
+    advItems[0].classList.add('active');
+  }
+
+  advItems.forEach(item => {
+    item.addEventListener('click', function() {
+      advDesc.innerHTML = this.querySelector('p').innerHTML;
+
+      advItems.forEach(el => el.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+});
