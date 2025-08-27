@@ -1328,9 +1328,17 @@ opacity: 0;
 
 /*Interview Paragraph*/
 
+.sidebar_1 .int_small,
+.sidebar_2 .int_small,
+.sidebar_3 .int_small,
+.sidebar_4 .int_small,
+.sidebar_5 .int_small{
+  margin-top: 0;
+  font-size: 26px;
+}
+
 .container_1,
 .container_2,
-.container_3,
 .container_4 {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -1342,8 +1350,8 @@ opacity: 0;
     margin-bottom: 100px;
     border-radius: 20px;
     opacity: 0;
-    transform: translateY(50px);
     transition: opacity 1s ease, transform 1s ease;
+    transform: translateY(50px);
 }
 
 .container_3 {
@@ -1357,8 +1365,8 @@ opacity: 0;
     margin-bottom: 100px;
     border-radius: 20px;
     opacity: 0;
-    transform: translateY(50px);
     transition: opacity 1s ease, transform 1s ease;
+    transform: translateY(50px);
 }
 
 .container_5 {
@@ -1372,8 +1380,8 @@ opacity: 0;
     margin-bottom: 0;
     border-radius: 20px;
     opacity: 0;
-    transform: translateY(50px);
     transition: opacity 1s ease, transform 1s ease;
+    transform: translateY(50px);
 }
 
 .container_1.visible,
@@ -1384,7 +1392,6 @@ opacity: 0;
     opacity: 1;
     transform: translateY(0);
 }
-
 
 .sidebar_1,
 .sidebar_2,
@@ -3472,17 +3479,22 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
     gap: 10px;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 0;
   }
 
   .icons figure {
+    width: 110px;
     margin: 0;  
   flex-shrink: 0;   
-  text-align: center;
+  align-items: center;
+  padding-left: 10px;
+  position: relative;
 }
 
 .soyeon_p,
@@ -3491,6 +3503,7 @@ main{
 .yoshitani_p,
 .shitara_p{
   font-size: 10px;
+  white-space: nowrap;
 }
 
   .shitara_container,
@@ -3501,11 +3514,15 @@ main{
     width: 75px;
     height: 75px;
     align-items: center;
+    position: relative;
+    transform: translateX(15px);
   }
+
 
   .icons figure img {
     width: 75px;
     height: 75px;
+    object-fit: cover;
   }
   
 .icons figcaption {
@@ -3522,6 +3539,8 @@ main{
     grid-template-columns: 1fr;
     height: auto;
     padding: 15px;
+    margin-top: 50px;
+    margin-bottom: 0;
   }
 
   .shitara_container_2,
@@ -3533,6 +3552,52 @@ main{
     height: 200px;
     margin-top: 20px;
   }
+
+  .sidebar_5,
+  .sidebar_4,
+  .sidebar_3,
+  .sidebar_2,
+  .sidebar_1{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 10px;
+    padding: 0 10px 15px 10px;
+    
+  }
+
+  .sidebar_1 h2,
+.sidebar_2 h2,
+.sidebar_3 h2,
+.sidebar_4 h2,
+.sidebar_5 h2 {
+  font-size: 18px;
+}
+
+.section_1 h2,
+.section_2 h2,
+.section_3 h2,
+.section_4 h2,
+.section_5 h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.sidebar_1 .int_small,
+.sidebar_2 .int_small,
+.sidebar_3 .int_small,
+.sidebar_4 .int_small,
+.sidebar_5 .int_small{
+  margin-top: 0;
+  font-size: 15px;
+}
+
+.section_1 p,
+.section_2 p,
+.section_3 p,
+.section_4 p,
+.section_5 p {
+  font-size: 12px;
+}
 
   .sidebar_1 img,
   .sidebar_2 img,
