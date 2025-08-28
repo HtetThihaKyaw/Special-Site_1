@@ -4,7 +4,7 @@
 html,
 body {
     scroll-behavior: smooth;
-    background: linear-gradient(to right, #E6F4F1 0%, #afc1ff 67%, #B8C6F5 100%);
+    background: linear-gradient(to right,  #afc1ff 67%,#E6F4F1 40%, #B8C6F5 50%);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -620,8 +620,16 @@ color: #494AE9;
     overflow: hidden;
     margin: 0;
     padding-top: 20px;
-    box-sizing: border-box;
+    box-sizing: border-box;opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
 }
+
+.imgs_slide.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 .img_train {
     display: flex;
@@ -2208,14 +2216,12 @@ opacity: 0;
 /*Support Header*/
 
 main{
-        background: linear-gradient(to right, #E6F4F1 0%, #afc1ff 67%, #B8C6F5 100%);
+         background: linear-gradient(to right,  #afc1ff 67%,#E6F4F1 40%, #B8C6F5 50%);
 }
 
 #kv_head2 {
-    background-color: #494AE9;
     margin-top: 75px;
     margin-bottom: 100px;
-    border-radius: 20px;
     padding-top: 50px;
     opacity: 0;
     height: 680px;
@@ -2237,36 +2243,34 @@ main{
     display: block;
     margin: 0 auto !important;
     color: #494AE9;
-    font-size: 32px;
+    font-size: 48px;
     text-align: center;
     margin: 0;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     padding: 20px 30px;
     border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
+    box-shadow: none;
     width: fit-content;
     max-width: 90%;
 }
 
 #head2 p {
-    color: #fff;
+    color: #494AE9;
     text-align: center;
     font-size: 24px;
     margin: 0;
     margin-top: 50px;
     font-family: 'Inter', sans-serif;
-    font-weight: 300;
+    font-weight: 450;
 }
 
 #body2 h3 {
-    color: #494AE9;
+    color: #fff;
     font-size: 24px;
     padding: 20px 30px;
     border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
+    box-shadow: none;
     width: fit-content;
     max-width: 90%;
 }
@@ -2301,7 +2305,7 @@ main{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 #body2 img:hover {
@@ -2318,20 +2322,19 @@ main{
 
 #s_body2 h3 {
     display: block;
-    color: #494AE9;
+    color: #000;
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     font-weight: bold;
-    padding: 20px 30px;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
+    padding: 20px 30px 20px 0;
     width: fit-content;
     max-width: 90%;
+  text-decoration: underline 1px #000 solid;
+  text-underline-offset: 4px;
 }
 
 #s_body2 p {
-    color: #fff;
+    color: #000;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     margin: 5px 0;
@@ -2351,7 +2354,7 @@ main{
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.5s ease, transform 0.5s ease;
-  background: linear-gradient(to right, #E6F4F1 0%, #afc1ff 67%, #B8C6F5 100%);
+   background: linear-gradient(to right,  #afc1ff 67%,#E6F4F1 40%, #B8C6F5 50%);
 }
 
 .hr_manners.visible {
@@ -2363,15 +2366,12 @@ main{
 .hr_manners h4{
     display: block;
     margin: 0 auto !important;
-    color: #fff;
+    color: #494AE9;
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 32px;
+    font-weight: 600;
     font-family: 'Inter', sans-serif;
     padding: 20px 30px;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    background-color: #494AE9;
     width: fit-content;
     max-width: 90%;
 }
@@ -2383,7 +2383,7 @@ main{
   width: 100%;
   max-width: 1200px;
   gap: 80px;opacity: 0;
-  transform: translateY(50px);
+  transform: translateX(-50px);
   transition: opacity 1s ease, transform 1s ease;
   background-color: #fff;
   padding: 25px 0 ;
@@ -2396,12 +2396,12 @@ main{
 
 .manners.visible{
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 .manner_1, .manner_2, .manner_3 {
     padding: 35px;
-    background-color: #494AE9;
+    background-color: #fff;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -2410,14 +2410,25 @@ main{
   text-align: center;
   max-width: 250px;
   position: relative;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.manner_1{
+  padding-right: 25px;
+  padding-left: 0;
+}
+
+.manner_2, .manner_3{
+  border-left: 1px #000 solid;
 }
 
 .manner_1 h3, .manner_2 h3, .manner_3 h3 {
   font-size: 24px;
-  color: #fff;
+  font-weight: 450;
+  color: #000;
   margin: 15px 0;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  padding-bottom: 3px;
+  text-decoration: underline 1px #000 solid;
+  text-underline-offset: 4px;
 }
 
 .manner1_container,
@@ -2437,7 +2448,7 @@ main{
   height: 135px;
   border-radius: 100%;
   margin: 0 auto;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .manner_1 img:hover, .manner_2 img:hover, .manner_3 img:hover {
@@ -2445,7 +2456,7 @@ main{
 }
 
 .manner_1 p, .manner_2 p, .manner_3 p {
-  color: #fff;
+  color: #000;
   font-size: 16px;
   line-height: 25px;
   margin: 10px 0;
@@ -2457,7 +2468,6 @@ main{
 /* Support Paragraph*/
 /*JEC*/
 .support_para {
-    background-color: #494AE9;
     margin-top: 100px;
     border-radius: 20px;
     opacity: 0;
@@ -2499,7 +2509,7 @@ main{
     padding: 0;
     width: 500px;
     height: 320px;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .jec img:hover {
@@ -2515,21 +2525,79 @@ main{
 
 .jec_para h3 {
     display: block;
-    margin-bottom: 50px;
     color: #494AE9;
     font-family: 'Inter', sans-serif;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
-    padding: 20px 30px;
+    padding: 0 30px 20px 0;
+    margin-top: 0;
     border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
     width: fit-content;
     max-width: 90%;
 }
 
+.jec_para .details,
+.support_para3 .details {
+  position: relative;
+  background-color: #494AE9;
+  color: #fff; 
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 16px;
+  max-width: 200px;
+  text-align: center;
+  padding: 5px;
+  margin-top: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.jec_para .details::before,
+.support_para3 .details::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%; 
+  height: 100%;
+  background: #fff; 
+  color: #494AE9;
+  transition: width 0.5s ease;
+  z-index: 0;  
+}
+
+.jec_para .details span,
+.support_para3 .details span {
+  position: relative;
+  z-index: 1; 
+}
+
+.jec_para .details:hover::before,
+.support_para3 .details:hover::before {
+  width: 100%;
+}
+
+.jec_para .details:hover,
+.support_para3 .details:hover {
+  color: #494AE9;
+}
+
+
+
+.jec_para .details.visible,
+.support_para3 .details.visible{
+  opacity: 1;
+    transform: translateX(0);
+}  
+
+.jec_para a,
+.support_para3 a{
+  text-decoration: none;
+}
+
 .jec_para p {
-    color: #fff;
+    color: #000;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     margin: 0;
@@ -2539,10 +2607,17 @@ main{
     font-weight: 500;
 }
 
+.divider {
+  width: 500px; 
+  height: 1px; 
+  background-color: #000; 
+  border: none;
+  margin: 20px auto; 
+}
+
 /*Window*/
 .support_para2 {
-    background-color: #494AE9;
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 20px;
     opacity: 0;
     transform: translateY(50px);
@@ -2569,7 +2644,7 @@ main{
     padding: 0;
     width: 500px;
     height: 320px;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .window img:hover {
@@ -2585,21 +2660,19 @@ main{
 
 .window_para h3 {
     display: block;
-    margin-bottom: 50px;
     color: #494AE9;
     font-family: 'Inter', sans-serif;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
-    padding: 20px 30px;
+    padding: 0 30px 20px 0;
+    margin-top: 0;
     border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
     width: fit-content;
     max-width: 90%;
 }
 
 .window_para p {
-    color: #fff;
+    color: #000;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     margin: 0;
@@ -2611,8 +2684,7 @@ main{
 
 /*Welcome*/
 .support_para3 {
-    background-color: #494AE9;
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 20px;
     opacity: 0;
     transform: translateY(50px);
@@ -2639,7 +2711,7 @@ main{
     padding: 0;
     width: 500px;
     height: 320px;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .welcome img:hover {
@@ -2656,26 +2728,25 @@ main{
 
 .welcome_para h3 {
     display: block;
-    margin-bottom: 50px;
     color: #494AE9;
     font-family: 'Inter', sans-serif;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
-    padding: 20px 30px;
+    padding: 0 30px 20px 0;
+    margin-top: 0;
     border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
     width: fit-content;
     max-width: 90%;
 }
 
 .welcome_para p {
-    color: #fff;
+    color: #000;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     margin: 0;
     line-height: 35px;
-    letter-spacing: 0.7px;
+    letter-spacing: 1px;
+    padding-right: 150px;
     font-weight: 500;
 }
 
