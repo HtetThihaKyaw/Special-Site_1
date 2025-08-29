@@ -111,6 +111,8 @@
             { selector: '#sup_catch', threshold: 0.1 }, 
             { selector: '.manner-desc', threshold: 0.1 },
             { selector: '.details', threshold: 0.1 },
+            { selector: '.ani_slide', threshold: 0.5 },
+            { selector: '.divider', threshold: 0.5 },
         ];
 
         observerConfigs.forEach((config) => {
@@ -132,6 +134,8 @@
             );
             elements.forEach((element) => observer.observe(element));
         });
+
+     
 
         // Smooth Scrolling for Teacher, Interview, Skills
         const anchorSelectors = [
