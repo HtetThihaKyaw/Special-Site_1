@@ -2229,6 +2229,7 @@ main{
     height: 680px;
     transform: translateY(50px);
     transition: opacity 1s ease, transform 1s ease;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 #kv_head2.visible {
@@ -2364,15 +2365,17 @@ main{
   width: 100%;
   padding: 0;
   opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-  background: linear-gradient(to right, #FFFFFF, #87a2eb);
+  transform: translateY(1rem) scale(0.95); 
+    filter: saturate(0) contrast(4) brightness(0.1) blur(3px); 
+    transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out, filter 0.7s ease-in-out; 
+  /* background: linear-gradient(to right, #FFFFFF, #87a2eb); */
    /* background: linear-gradient(to right,  #afc1ff 67%,#E6F4F1 40%, #B8C6F5 50%); */
 }
 
 .hr_manners.visible {
   opacity: 1;
-  transform: translateY(0);
+    transform: translateY(0) scale(1);
+    filter: none;
 }
 
 
@@ -2396,8 +2399,10 @@ main{
   width: 100%;
   max-width: 1200px;
   gap: 80px;opacity: 0;
-  transform: translateX(-50px);
-  transition: opacity 1s ease, transform 1s ease;
+  opacity: 0;
+    transform: translateY(1rem) scale(0.95); 
+    filter: saturate(0) contrast(4) brightness(0.2) blur(3px); 
+    transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out, filter 0.7s ease-in-out; 
   background-color: rgba(255, 255, 255, 0.7);
   padding: 25px 0 ;
   border-radius: 0;
@@ -2409,7 +2414,8 @@ main{
 
 .manners.visible{
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0) scale(1);
+    filter: none;
 }
 
 .manner_1, .manner_2, .manner_3 {
@@ -2559,7 +2565,6 @@ main{
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-weight: bold;
-    padding: 0 30px 20px 0;
     margin-top: 0;
     border-radius: 16px;
     width: fit-content;
@@ -2685,7 +2690,7 @@ main{
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-weight: bold;
-    padding: 0 30px 20px 0;
+    padding-bottom: 15px;
     margin-top: 0;
     border-radius: 16px;
     width: fit-content;
@@ -2731,7 +2736,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    padding: 0 20px 20px 20px;
     padding-right: 200px;
 }
 
@@ -2741,7 +2746,6 @@ main{
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-weight: bold;
-    padding: 0 30px 20px 0;
     margin-top: 0;
     border-radius: 16px;
     width: fit-content;
@@ -2770,13 +2774,15 @@ main{
     align-items: center;
     z-index: -10;
     opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(1rem) scale(0.95); 
+    filter: saturate(0) contrast(4) brightness(0.1) blur(3px); 
+    transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out, filter 0.7s ease-in-out; 
 }
 
 #sup_catch.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
+    filter: none;
 }
 
 .sup_img_container_2 {
@@ -2794,7 +2800,7 @@ main{
     height: 100%;
     width: 100%;
     border-radius: 20px;
-    transition: transform 0.3s ease;
+    transition: transform 0.7s ease;
 }
 
 #sup_catch img:hover {

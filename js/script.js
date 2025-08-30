@@ -107,6 +107,7 @@
             { selector: '#skill_catch', threshold: 0.1 },
             { selector: '#kv_head2', threshold: 0.1 },
             { selector: '.hr_manners', threshold: 0.1 },
+            { selector: '.manners', threshold: 0.1 },
             { selector: '.support_para, .support_para2, .support_para3', threshold: 0.1 },
             { selector: '#sup_catch', threshold: 0.1 }, 
             { selector: '.manner-desc', threshold: 0.1 },
