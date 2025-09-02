@@ -114,6 +114,8 @@
             { selector: '.details', threshold: 0.1 },
             { selector: '.ani_slide', threshold: 0.5 },
             { selector: '.divider', threshold: 0.5 },
+            { selector: '#footer', threshold: 0.5 },
+            { selector: '#footer_1', threshold: 0.5 },
         ];
 
         observerConfigs.forEach((config) => {
