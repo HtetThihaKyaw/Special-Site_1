@@ -832,7 +832,7 @@ opacity: 0;
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 1s ease, transform 1s ease;
-    background-color: #494AE9;
+    background-color: rgba(255, 255, 255, 0.7);
     margin-top: 100px;
     margin-bottom: 100px;
     padding-top: 50px;
@@ -848,27 +848,29 @@ opacity: 0;
 
 .teacher_head h1 {
     display: block;
-    margin: 0 auto;
-    font-size: 32px;
-    font-weight: bold;
-    text-align: center;
+    margin: 0 auto !important;
     color: #494AE9;
+    font-size: 48px;
+    text-align: center;
+    margin: 0;
     font-family: 'Inter', sans-serif;
+    font-weight: bold;
     padding: 20px 30px;
     border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
+    box-shadow: none;
     width: fit-content;
     max-width: 90%;
 }
 
 .teacher_head p {
-    color: #fff;
-    font-size: 24px;
+    color: #494AE9;
     text-align: center;
-    margin-top: 40px;
+    font-size: 24px;
+    margin: 0;
+    margin-top: 25px;
     margin-bottom: 50px;
-    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    font-weight: 450;
 }
 
 
@@ -891,7 +893,7 @@ opacity: 0;
 .mori_container img {
     width: 100%;
     height: 100%;
-    transition: transform 0.3s ease;
+    transition: transform 0.7s ease;
 }
 
 .osanai_container img:hover,
@@ -914,7 +916,7 @@ opacity: 0;
 .osanai_icon figcaption,
 .sekine_icon figcaption,
 .mori_icon figcaption {
-    color: #fff;
+    color: #000;
     font-size: 24px;
     text-align: center;
     margin-top: 20px;
@@ -934,7 +936,6 @@ opacity: 0;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
     height: 560px;
-    background-color: #494AE9;
     padding: 20px;
     margin-top: 100px;
     border-radius:20px 20px 0 0;
@@ -948,7 +949,6 @@ opacity: 0;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
     height: 565px;
-    background-color: #494AE9;
     padding: 20px;
     margin-top: 100px;
     border-radius:20px 20px 0 0;
@@ -964,7 +964,6 @@ opacity: 0;
 .side_1,
 .side_2,
 .side_3 {
-    background-color: white;
     padding:38px 30px 15px 30px; 
     border-radius: 20px;
     display: flex;
@@ -977,7 +976,7 @@ opacity: 0;
 .side_3 img {
     width: 337px;
     height: 390px;
-    transition: transform 0.3s ease;
+    transition: transform 0.7s ease;
     border-radius: 20px;
 }
 
@@ -1012,7 +1011,6 @@ opacity: 0;
 .t_content_1,
 .t_content_2,
 .t_content_3 {
-    background-color: white;
     padding: 20px;
     padding-top: 40px;
     border-radius: 20px;
@@ -1026,7 +1024,7 @@ opacity: 0;
 .t_section_2,
 .t_section_3 {
     padding: 0;
-    background-color: #e6f0fa;
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 20px;
     text-align: center;
 }
@@ -1035,16 +1033,15 @@ opacity: 0;
 .t_section_2 h2,
 .t_section_3 h2 {
     color: #494AE9;
-    text-shadow: 2px 1px 0 #a7baff;
     margin-bottom: 35px;
 }
 
 .t_section_1 p,
 .t_section_2 p,
 .t_section_3 p {
-    color: #494AE9;
+    color: #000;
     font-size: 18px;
-    font-weight: 550;
+    font-weight: 500;
 }
 
 /*Students' Comments*/
@@ -1052,8 +1049,7 @@ opacity: 0;
 .comment_1{
     display: flex;
     justify-content: space-around;
-    background-color: #494AE9;
-    padding: 30px 20px 20px 20px;
+    padding: 30px 20px 50px 20px;
     border-radius: 0 0 20px 20px;
     margin-top: 0;
     gap: 25px;
@@ -1077,7 +1073,6 @@ opacity: 0;
 .comment_p8,
 .comment_p9{
     padding: 25px 15px 25px 15px;
-    background-color: #fff;
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius: 25px;
@@ -1092,7 +1087,7 @@ opacity: 0;
 .s_comment_7,
 .s_comment_8,
 .s_comment_9{
-    background-color: #e6f0fa;
+    background-color: rgba(255, 255, 255, 0.6);
     padding: 10px;
     border-radius: 20px;
 }
@@ -1139,7 +1134,7 @@ opacity: 0;
 .comment_p7 p,
 .comment_p8 p,
 .comment_p9 p{
-    color: #494AE9;
+    color: #000;
     font-weight: 550;
     font-size: 16px;
     line-height: 2;
@@ -1147,7 +1142,7 @@ opacity: 0;
 }
 
 .comment_p2 p{
-    color: #494AE9;
+    color: #000;
     font-weight: 500;
     font-size: 16px;
     line-height: 2;
@@ -1190,7 +1185,7 @@ opacity: 0;
     width: 150px;
     height: 150px;
     padding: 0;
-    transition: transform 0.2s ease;
+    transition: transform 0.7s ease;
     border-radius: 100px;
 }
 
@@ -1255,7 +1250,7 @@ opacity: 0;
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 1s ease, transform 1s ease;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.7);
     margin-top: 100px;
     padding-top: 50px;
     border-radius: 20px;
@@ -1433,8 +1428,9 @@ opacity: 0;
 .sidebar_3,
 .sidebar_4,
 .sidebar_5 {
-    background-color: rgba(255, 255, 255, 0.7);
+    /* background-color: rgba(255, 255, 255, 0.7); */
     border-radius: 20px;
+    padding-top: 75px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1516,7 +1512,7 @@ opacity: 0;
 .section_5 {
     line-height: 1.7;
     padding: 0;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 20px;
     text-align: center;
 }
@@ -1526,8 +1522,8 @@ opacity: 0;
 .section_3 h2,
 .section_4 h2,
 .section_5 h2 {
-    color: #494AE9;
-    text-shadow: 2px 1px 0 #a7baff;
+    color: #000;
+    /* text-shadow: 2px 1px 0 #a7baff; */
     margin-bottom: 35px;
 }
 
@@ -1536,7 +1532,7 @@ opacity: 0;
 .section_3 p,
 .section_4 p,
 .section_5 p {
-    color: #494AE9;
+    color: #000;
     font-size: 18px;
     font-weight: 550;
 }
@@ -1591,7 +1587,7 @@ opacity: 0;
     transform: translateY(1rem) scale(0.95); 
     filter: saturate(0) contrast(4) brightness(0.2) blur(3px); 
     transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out, filter 0.7s ease-in-out; 
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 #kv_head3.visible {
@@ -1948,7 +1944,7 @@ opacity: 0;
 /*Event*/
 
 .team_para .event {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
     padding-top: 0;
     padding-bottom: 30px;
     border-radius: 20px;
@@ -2000,7 +1996,7 @@ opacity: 0;
 
 /*Graphic*/
 .team_para .graphic {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
     padding-top: 0;
     padding-bottom: 30px;
     border-radius: 20px;
@@ -2044,7 +2040,7 @@ opacity: 0;
 
 /*Seminar*/
 .team_para .seminar_t {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
     padding-top: 0;
     padding-bottom: 30px;
     border-radius: 20px;
@@ -2088,7 +2084,7 @@ opacity: 0;
 
 /*Hotpage*/
 .team_para .hotpage {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
     padding-top: 0;
     padding-bottom: 30px;
     border-radius: 20px;
@@ -2132,7 +2128,7 @@ opacity: 0;
 
 /*Maintanance*/
 .team_para .main {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
     padding-top: 0;
     padding-bottom: 30px;
     border-radius: 20px;
@@ -2177,7 +2173,8 @@ opacity: 0;
 /*Skill's Catch Phrase*/
 
 #skill_catch {
-    border-radius: 20px 20px 0 0;
+    /* background-color: rgba(255, 255, 255, 0.7); */
+    background-color: #fff;
     margin:100px 0 0 0;
     padding-top: 50px;
     display: flex;
@@ -2232,7 +2229,7 @@ main{
     height: 680px;
     transform: translateY(50px);
     transition: opacity 1s ease, transform 1s ease;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 #kv_head2.visible {
@@ -2434,11 +2431,12 @@ main{
 
 .manner_2,
 .manner_3{
-  padding-left: 50px;
+  padding-left: 75px;
+  padding-right: 0;
 }
 
 .manner_1{
-  padding-right: 25px;
+  padding-right: 0;
   padding-left: 0;
 }
 
@@ -2492,6 +2490,8 @@ main{
 
 /* Support Paragraph*/
 /*JEC*/
+
+
 /* .support_para {
     margin-top: 100px;
     border-radius: 20px;
@@ -2771,7 +2771,7 @@ main{
 
 /*Support Img*/
 #sup_catch {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 0;
     margin: 100px 0 0 0;
     display: flex;
@@ -2825,7 +2825,7 @@ main{
 
 /* Footer */
 #footer {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 20px 20px 0 0;
     padding: 50px 0 20px;
     position: relative;
@@ -2837,7 +2837,7 @@ main{
 }
 
 #footer_1 {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 50px 0 20px;
     position: relative;
     width: 100%;
