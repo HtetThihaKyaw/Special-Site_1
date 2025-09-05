@@ -142,7 +142,7 @@
 
         // Smooth Scrolling for Teacher, Interview, Skills
         const anchorSelectors = [
-            { selector: '.teachers a', offset: 15 },
+            { selector: '.teachers a', offset: 75 },
             { selector: '.icons a', offset: 100 },
             { selector: '.teams a', offset: 150 },
         ];
