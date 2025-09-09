@@ -127,20 +127,23 @@ body {
     position: relative;
     width: 100%;
     opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease, transform 1s ease;
+    transform: translateY(1rem) scale(0.95); 
+    filter: saturate(0) contrast(4) brightness(0.1) blur(3px); 
+    transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out, filter 0.7s ease-in-out; 
 }
 
 .head_kv {
     background-color: linear-gradient(to right, #E6F4F1 0%, #afc1ff 67%, #B8C6F5 100%);
     opacity: 0; 
-    transform: translateY(30px); 
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out; 
+    transform: translateY(1rem) scale(0.95); 
+    filter: saturate(0) contrast(4) brightness(0.1) blur(3px); 
+    transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out, filter 0.7s ease-in-out;  
 }
 
 .head_kv.visible {
-  opacity: 1; 
-  transform: translateY(0); 
+  opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: none; 
 }
 
 
@@ -151,7 +154,8 @@ body {
 .faqs.visible,
 .slide.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
+    filter: none;
 }
 
 .head_kv.visible{
@@ -312,14 +316,15 @@ background-color: rgba(73, 74, 233, 0.8);
     margin-top: 100px;
     padding-top: 100px;
     padding-bottom: 100px;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s ease, transform 1s ease;
+  transform: translateY(1rem) scale(0.95); 
+  filter: saturate(0) contrast(4) brightness(0.1) blur(3px); 
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out, filter 0.7s ease-in-out; 
 }
 
 .jobs.visible{
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
+    filter: none;
 }
 
 .job_header h3{
@@ -340,13 +345,15 @@ background-color: rgba(73, 74, 233, 0.8);
     max-width: 100%;
     gap: 100px;
     opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s ease, transform 1s ease;
+  transform: translateY(1rem) scale(0.95); 
+  filter: saturate(0) contrast(4) brightness(0.1) blur(3px); 
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out, filter 0.7s ease-in-out; 
 }
 
 .job_titles.visible{
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
+    filter: none;
 }
 
 .job_1,
@@ -433,16 +440,16 @@ background-color: rgba(73, 74, 233, 0.8);
   max-width: 100%;
   gap: 50px;
   opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s ease, transform 1s ease;
-  /* background-color: #494AE9; */
+  transform: translateY(1rem) scale(0.95); 
+  filter: saturate(0) contrast(4) brightness(0.1) blur(3px); 
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out, filter 0.7s ease-in-out; 
   padding: 25px 0 100px 0;
-  /* border-radius: 20px; */
 }
 
 .advantages_img.visible{
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
+    filter: none;
 }
 
 .adv_1,
@@ -631,13 +638,15 @@ color: #000;
     margin: 0;
     padding-top: 20px;
     box-sizing: border-box;opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s ease, transform 1s ease;
+  transform: translateY(1rem) scale(0.95); 
+  filter: saturate(0) contrast(4) brightness(0.1) blur(3px); 
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out, filter 0.7s ease-in-out; 
 }
 
 .imgs_slide.visible{
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
+    filter: none;
 }
 
 
@@ -683,13 +692,15 @@ color: #000;
     width: fit-content;
     max-width: 100%;
     opacity: 0; 
-  transform: translateY(30px); 
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out; 
+  transform: translateY(1rem) scale(0.95); 
+  filter: saturate(0) contrast(4) brightness(0.1) blur(3px); 
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out, filter 0.7s ease-in-out; 
 }
 
 .faq_header h3.visible {
-  opacity: 1; 
-  transform: translateY(0); 
+  opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: none;
 }
 
 .faq_3 .container-block {
@@ -2345,8 +2356,8 @@ main{
   padding: 0;
   opacity: 0;
   transform: translateY(1rem) scale(0.95); 
-    filter: saturate(0) contrast(4) brightness(0.1) blur(3px); 
-    transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out, filter 0.7s ease-in-out; 
+  filter: saturate(0) contrast(4) brightness(0.1) blur(3px); 
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out, filter 0.7s ease-in-out; 
   /* background: linear-gradient(to right, #FFFFFF, #87a2eb); */
    /* background: linear-gradient(to right,  #afc1ff 67%,#E6F4F1 40%, #B8C6F5 50%); */
 }
@@ -2905,7 +2916,7 @@ main{
 }
 
 #copy_right p {
-    margin-left: 980px;
+    margin-left: 930px;
 }
 
 #footer_1 address {
