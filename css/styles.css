@@ -904,7 +904,7 @@ opacity: 0;
     border-radius: 30px;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .osanai_icon figcaption,
@@ -1303,7 +1303,7 @@ opacity: 0;
     height: 199px;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
     border-radius: 100%;
 }
 
@@ -1460,7 +1460,7 @@ opacity: 0;
     height: 430px;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     margin-top: 50px;
 }
@@ -1546,7 +1546,7 @@ opacity: 0;
 }
 
 .friends_catch img {
-    padding-top: 50px;
+    padding-top: 75px;
     width: auto;
     height: 450px;
 }
@@ -1556,6 +1556,7 @@ opacity: 0;
     font-size: 32px;
     text-align: center;
     margin-top: 0;
+    padding-bottom: 50px;
 }
 
 .friends_catch.visible {
@@ -1646,7 +1647,7 @@ opacity: 0;
     margin-top: 100px;
     margin-left: 300px;
     margin-right: 65px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
 }
 
 #body3 .skill_img_container_1 img {
@@ -1767,14 +1768,14 @@ opacity: 0;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .teams figure img {
     width: 200px;
     height: 157px;
     border-radius: 20px;
-    transition: transform 0.3s ease;
+    transition: transform 0.7s ease;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -1941,6 +1942,7 @@ opacity: 0;
     padding-bottom: 30px;
     border-radius: 20px;
     margin-top: 60px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .event {
@@ -1993,6 +1995,7 @@ opacity: 0;
     padding-bottom: 30px;
     border-radius: 20px;
     margin-top: 60px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .graphic {
@@ -2037,6 +2040,7 @@ opacity: 0;
     padding-bottom: 30px;
     border-radius: 20px;
     margin-top: 60px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .seminar_t {
@@ -2081,6 +2085,7 @@ opacity: 0;
     padding-bottom: 30px;
     border-radius: 20px;
     margin-top: 60px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .hotpage {
@@ -2125,6 +2130,7 @@ opacity: 0;
     padding-bottom: 30px;
     border-radius: 20px;
     margin-top: 60px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .main {
@@ -2168,7 +2174,7 @@ opacity: 0;
     /* background-color: rgba(255, 255, 255, 0.7); */
     background-color: #fff;
     margin:100px 0 0 0;
-    padding-top: 50px;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2186,6 +2192,7 @@ opacity: 0;
     font-size: 32px;
     text-align: center;
     margin-top: 10px;
+    padding-bottom: 50px;
 }
 
 #skill_catch {
@@ -2291,7 +2298,7 @@ main{
     margin-top: 100px;
     margin-left: 300px;
     margin-right: 65px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
 }
 
 #body2 .sup_img_container_1 img {
@@ -2455,7 +2462,7 @@ main{
     position: relative;
     overflow: hidden;
     display: inline-block;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .manner_1 img, .manner_2 img, .manner_3 img {
@@ -2530,7 +2537,7 @@ main{
     width: 500px;
     height: 320px;
     border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
     margin-right: 100px !important;
     overflow: hidden;
@@ -2543,7 +2550,7 @@ main{
     padding: 0;
     width: 500px;
     height: 320px;
-    transition: transform 0.5s ease;
+    transition: transform 0.7s ease;
 }
 
 .jec img:hover {
@@ -2668,7 +2675,7 @@ main{
     padding: 0;
     width: 500px;
     height: 320px;
-    transition: transform 0.5s ease;
+    transition: transform 0.7s ease;
 }
 
 .window img:hover {
@@ -2723,7 +2730,7 @@ main{
     padding: 0;
     width: 500px;
     height: 320px;
-    transition: transform 0.5s ease;
+    transition: transform 0.7s ease;
 }
 
 .welcome img:hover {
@@ -2763,7 +2770,7 @@ main{
 
 /*Support Img*/
 #sup_catch {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #fff;
     border-radius: 0;
     margin: 100px 0 0 0;
     display: flex;
