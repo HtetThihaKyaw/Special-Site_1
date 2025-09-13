@@ -294,7 +294,6 @@ background-color: rgba(73, 74, 233, 0.8);
 }
 
 
-
 .head_s_container img:hover,
 .map figure img:hover,
 .map_img iframe:hover,
@@ -2928,7 +2927,7 @@ main{
 }
 
 #copy_right p {
-    margin-left: 930px;
+    margin-left: 945px;
 }
 
 #footer_1 address {
@@ -3124,8 +3123,13 @@ main{
   .faq_header h3 {
     font-size: 24px;
     margin: 50px auto 20px;
-    padding: 10px 15px;
+    padding: 50px 15px 25px 15px;
   }
+
+  .job_header h3{
+    padding-top: 0 !important;
+  }
+
 
   #head_s_para {
     grid-template-columns: 1fr;
@@ -3149,7 +3153,7 @@ main{
 
   #head_s_para p {
     margin: 30px 10px 20px 10px;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 30px;
     text-align: center;
   }
@@ -3167,7 +3171,7 @@ main{
 
   .jobs{
     margin-top: 50px;
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 35px;
 }
 
@@ -3186,8 +3190,12 @@ main{
   .job_3 {
     max-width: 100%;
     padding: 10px;
-    background-color: #fff;
+    background-color: none;
     box-shadow: none;
+  }
+
+  .divider{
+    width: 200px;
   }
 
   .job_container1,
@@ -3216,7 +3224,7 @@ main{
     padding-top: 10px;
     font-weight: 700;
     font-size: 12px;
-    color: #494AE9;
+    color: #000;
     text-align: center;
   }
 
@@ -3254,6 +3262,10 @@ main{
   .advantages_img h4 {
     font-size: 16px;
   }
+
+  .advantages h3{
+    padding-top: 0 !important;
+  }
   
 
   .adv_desc_display {
@@ -3276,7 +3288,7 @@ main{
 
   .advantages{
     margin-top: 50px;
-    padding-top: 50px;
+    padding-top: 10x;
   }
 
   .advantages h3{
@@ -3358,7 +3370,7 @@ main{
     flex-direction: column;
     height: auto;
     padding-bottom: 30px;
-    margin-top: 50px;
+    margin-top: 75px;
   }
 
   .home_manners p {
@@ -3389,6 +3401,11 @@ main{
     padding-bottom: 30px;
   }
 
+  .map h3{
+    margin-top: 25px !important;
+    padding-top: 15px;
+  }
+
   .map_img {
     display: flex;
     flex-direction: column;
@@ -3403,17 +3420,22 @@ main{
   }
 
   .map figure figcaption {
-    font-size: 16px;
-    margin: 15px 0 0 0;
+    font-size: 14px;
+    margin: 20px 0 0 0;
   }
 
   .slide{
-    margin-top: 50px;
+    margin-top: 25px;
+    margin-bottom: 15px !important;
     font-size: 24px;
   }
 
   .imgs_slide {
     height: 300px;
+  }
+
+  .imgs_slide{
+    margin-bottom: 25px;
   }
 
   .img_train img {
@@ -3430,13 +3452,18 @@ main{
     }
   }
 
+  .faq_header h3{
+    margin-top: 15px !important;
+    padding-top: 25px !important;
+  }
+
   .faq_3 .container-block {
-    max-width: 370px;
+    max-width: 300px;
     margin-bottom: 50px;
   }
 
   .faq_3 .text-blk.faq-questions {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     margin-right: 5px;
     margin-left: 5px;
@@ -4250,6 +4277,12 @@ main{
   #copy_right{
     margin: 0 auto;
     margin-top: 25px !important;
+  }
+
+  #copy_right p{
+    font-size: 10px;
+    text-align: center;
+    margin: 0 auto !important;
   }
 
   #top {
