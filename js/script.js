@@ -204,6 +204,24 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener
 )
 
 
+const cards = document.querySelectorAll('.advantages_img > div'); // adv_1, adv_2, etc.
+const headers = document.querySelectorAll('.advantages_img h4');
+
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    // reset all h4 colors
+    headers.forEach(h4 => h4.classList.remove('active'));
+
+    // find h4 inside the clicked card
+    const h4 = card.querySelector('h4');
+    if (h4) {
+      h4.classList.add('active');
+    }
+  });
+});
+
+
+
 const items = document.querySelectorAll('.manners > div');
 const descBox = document.querySelector('.manner-desc');
 

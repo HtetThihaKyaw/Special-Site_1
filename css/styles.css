@@ -2999,7 +2999,6 @@ main{
   /* Navigation */
 
   .nav{
-    border-radius: 0 0 20px 20px;
     height: 65px;
   }
 
@@ -3049,7 +3048,6 @@ main{
   flex-direction: column;
   background: linear-gradient(to right, #cbd7ff 2%, #a7baff 70%, #a7baff 100%);
   width: 100%;
-  border-radius: 0 0 20px 20px; 
   text-align: center;
   transition: top 0.7s ease;
 }
@@ -3182,7 +3180,6 @@ main{
   .job_titles {
     flex-direction: column;
     gap: 10px;
-    margin-top: 30px;
   }
 
   .job_1,
@@ -3266,6 +3263,8 @@ main{
   .advantages h3{
     padding-top: 0 !important;
   }
+
+  
   
 
   .adv_desc_display {
@@ -3273,13 +3272,12 @@ main{
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
-  background-color: #494AE9;
-  border-radius: 0 0 20px 20px;
+  background-color: rgba(255, 255, 255, 0.7);
   margin-top: 0;
   padding: 20px 10px 30px 10px;
   text-align: center;
   font-size: 12px;
-  color: #fff;
+  color: #000;
   line-height: 1.6;
   font-weight: 500;
   overflow: hidden;
@@ -3299,10 +3297,9 @@ main{
     flex-wrap: nowrap;
     flex-direction: row;
     gap: 0;
-    margin-bottom: 20px !important;
+    margin-bottom: 0 !important;
     margin-top: 0 !important;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0 5px 0 5px;
     overflow-x: auto;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
@@ -3314,7 +3311,6 @@ main{
 
 .advantages_img > div {
   flex: 0 0 auto;
-  min-width: 100px; /* adjust to your design */
 }
 
 .advantages_img {
@@ -3334,25 +3330,41 @@ main{
   .adv_2,
   .adv_3,
   .adv_4 {
+    background-color: rgba(255, 255, 255, 0.7);
     max-width: 100%;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     box-shadow: none;
   }
+
+  .advantages_img {
+  margin-bottom: 0; 
+  padding-bottom: 0;
+}
+
+.adv_desc_display p {
+  margin: 0;
+}
+
+
+.adv_1, .adv_2, .adv_3, .adv_4 {
+  padding-bottom: 0;
+}
 
   .adv_img_1,
   .adv_img_2,
   .adv_img_3,
   .adv_img_4 {
-    width: 100px;
-    height: 100px;
+    width: 55px;
+    height: 55px;
+    margin-bottom: 0;
   }
 
   .adv_1 img,
   .adv_2 img,
   .adv_3 img,
   .adv_4 img {
-    width: 100px;
-    height: 100px;
+    width: 55px;
+    height: 55px;
   }
 
   .adv_1 h4,
@@ -3360,8 +3372,19 @@ main{
 .adv_3 h4,
 .adv_4 h4{
   margin-top: 5px;
+  font-size: 12px;
+  color: #000;
 }
 
+.advantages_img h4 {
+  color: black; 
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.advantages_img h4.active {
+  color: #494AE9; 
+}
 
 
 
@@ -3458,7 +3481,7 @@ main{
   }
 
   .faq_3 .container-block {
-    max-width: 300px;
+    max-width: 330px;
     margin-bottom: 50px;
   }
 
@@ -3503,6 +3526,8 @@ main{
     margin-top: 65px;
     height: auto;
     padding-top: 20px;
+    padding-bottom: 25px;
+    border-radius: 0;
   }
 
   .teacher_head h1 {
@@ -3512,19 +3537,39 @@ main{
   }
 
   .teacher_head p {
-    font-size: 13px;
+    font-size: 10px;
     padding: 15px 5px;
     margin: 0;
   }
 
+ .osanai_icon figcaption, 
+ .sekine_icon figcaption, 
+ .mori_icon figcaption{
+  font-size: 12px;
+ }
 
-
+ .teachers{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 500px;
+  gap: 0;
+  margin: 0 auto !important;
+ }
 
   .osanai_container,
   .sekine_container,
   .mori_container {
-    width: 136px;
-    height: 218px;
+    width: 86px;
+    height: 128px;
+    align-items: center;
+  }
+
+  .osanai_icon,
+  .sekine_icon,
+  .mori_icon{
+    align-items: center;
+    margin: 16px 0 16px 0 !important;
   }
 
   .teacher_1,
@@ -3532,13 +3577,16 @@ main{
   .teacher_3 {
     grid-template-columns: 1fr;
     height: auto;
-    padding: 15px;
+    padding:0;
   }
 
   .side_1,
   .side_2,
   .side_3 {
-    padding: 15px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 10px;
+    padding: 0 10px 15px 10px;
   }
 
   .osanai_container_1,
@@ -3555,16 +3603,41 @@ main{
     height: 200px;
   }
 
+  .side_1 h2, 
+  .side_2 h2, 
+  .side_3 h2{
+    font-size: 18px;
+  }
+
+  .t_section_1 h2, 
+  .t_section_2 h2, 
+  .t_section_3 h2{
+  font-size: 16px;
+  margin-bottom: 10px;
+  }
+
+  .t_section_1 p, 
+  .t_section_2 p, 
+  .t_section_3 p{
+  margin-top: 0;
+  font-size: 10px;
+  }
+
   .t_content_1,
   .t_content_2,
   .t_content_3 {
-    padding: 15px;
+    padding: 0 15px;
+  }
+
+  .comments{
+    display: grid;
+    grid-template-areas: 1fr 1fr 1fr;
   }
 
   .comment_1 {
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
-    padding: 20px;
+    padding: 5px;
   }
 
   .comment_p1,
@@ -3577,7 +3650,7 @@ main{
   .comment_p8,
   .comment_p9 {
     grid-template-columns: 1fr;
-    padding: 15px;
+    padding: 0;
   }
 
   .s_comment_container_1,
@@ -3589,8 +3662,8 @@ main{
   .s_comment_container_7,
   .s_comment_container_8,
   .s_comment_container_9 {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     margin: 0 auto;
   }
 
@@ -3603,23 +3676,59 @@ main{
   .comment_p7 img,
   .comment_p8 img,
   .comment_p9 img {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .s_comment_1, 
+  .s_comment_2, 
+  .s_comment_3, 
+  .s_comment_4, 
+  .s_comment_5, 
+  .s_comment_6, 
+  .s_comment_7, 
+  .s_comment_8, 
+  .s_comment_9{
+    padding: 5px;
+  }
+
+  .comment_p1 p, 
+  .comment_p2 p,
+  .comment_p3 p, 
+  .comment_p4 p, 
+  .comment_p5 p, 
+  .comment_p6 p, 
+  .comment_p7 p, 
+  .comment_p8 p, 
+  .comment_p9 p{
+    font-size: 10px;
+  }
+
+  .comment_p2 p{
+    padding-top: 0;
+  }
+
+  .teachers_catch{
+    border-radius: 0;
+    margin-top: 50px;
   }
 
   .teachers_catch img {
     width: 100%;
     height: auto;
-    padding-top: 50px;
+    padding-top: 75px;
   }
 
+  .teachers_catch h3{
+    font-size: 18px;
+    padding-bottom: 25px;
+  }
 
 
   /* Interview Page */
   .int_head {
     padding: 15px;
-    padding-top: 50px;
-    margin-top: 65px;
+    margin-top: 65px !important;
   }
 
   .int_head h1 {
@@ -3628,7 +3737,7 @@ main{
   }
 
   .int_head h2 {
-    font-size: 13px;
+    font-size: 10px;
     margin: 20px 10px;
   }
 
@@ -3638,7 +3747,7 @@ main{
     flex-wrap: wrap;
     max-width: 500px;
     margin: 0 auto;
-    gap: 10px;
+    gap: 0;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -3650,7 +3759,7 @@ main{
     margin: 0;  
   flex-shrink: 0;   
   align-items: center;
-  padding-left: 10px;
+  padding-left: 5px;
   position: relative;
 }
 
@@ -3668,8 +3777,8 @@ main{
   .eguchi_container,
   .htetaung_container,
   .soyeon_container {
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
     align-items: center;
     position: relative;
     transform: translateX(15px);
@@ -3677,8 +3786,8 @@ main{
 
 
   .icons figure img {
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
     object-fit: cover;
   }
   
@@ -3695,7 +3804,6 @@ main{
   .container_5 {
     grid-template-columns: 1fr;
     height: auto;
-    padding: 15px;
     margin-top: 50px;
     margin-bottom: 0;
   }
@@ -3708,6 +3816,16 @@ main{
     width: 100%;
     height: 200px;
     margin-top: 20px;
+  }
+
+  .content_1, 
+  .content_2, 
+  .content_3, 
+  .content_4, 
+  .content_5{
+    gap: 10px;
+    padding:0 5px 5px 5px;
+
   }
 
   .sidebar_5,
@@ -3735,7 +3853,7 @@ main{
 .section_3 h2,
 .section_4 h2,
 .section_5 h2 {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
@@ -3745,7 +3863,7 @@ main{
 .sidebar_4 .int_small,
 .sidebar_5 .int_small{
   margin-top: 0;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .section_1 p,
@@ -3753,7 +3871,7 @@ main{
 .section_3 p,
 .section_4 p,
 .section_5 p {
-  font-size: 12px;
+  font-size: 10px;
 }
 
   .sidebar_1 img,
@@ -3771,6 +3889,8 @@ main{
 
   .friends_catch{
     margin-top: 50px;
+    border-radius: 0;
+    padding-top: 5px;
   }
 
   .friends_catch img {
@@ -3781,7 +3901,8 @@ main{
   }
 
   .friends_catch h3{
-    font-size: 24px;
+    font-size: 18px;
+    padding-bottom: 15px;
   }
 
   /* Skills Page */
@@ -3789,6 +3910,7 @@ main{
     margin-top: 65px;
     height: auto;
     padding-top: 20px;
+    padding-bottom: 0;
   }
 
   #head3 h1 {
@@ -3798,7 +3920,7 @@ main{
   }
 
   #head3 p {
-    font-size: 13px;
+    font-size: 10px;
     padding: 15px 5px;
     margin-top: 0;
   }
@@ -3851,7 +3973,8 @@ main{
   }
 
 .project_teams p {
-    font-size: 14px;
+    font-size: 10px;
+    margin-top: 0;
 }
 
   .teams {
@@ -3862,8 +3985,9 @@ main{
   }
 
   .teams figcaption {
-    font-size: 12px;
+    font-size: 10px;
     margin-bottom: 10px;
+    padding-top: 0;
   }
 
   .event_img_container,
@@ -3871,13 +3995,13 @@ main{
   .seminar_img_container,
   .hotpage_img_container,
   .main_img_container {
-    width: 120px;
-    height: 90px;
+    width: 110px;
+    height: 80px;
   }
 
   .teams figure img {
-    width: 120px;
-    height: 90px;
+    width: 110px;
+    height: 80px;
   }
 
   .team_para {
@@ -3911,9 +4035,10 @@ main{
   .team_para .seminar_t p,
   .team_para .hotpage p,
   .team_para .main p{
-    font-size: 13px;
+    font-size: 10px;
     text-align: center;
     padding-top: 15px;
+    letter-spacing: 1px;
   }
 
   .event_icon::after,
@@ -3954,6 +4079,7 @@ main{
 
   #skill_catch{
     margin-top: 50px;
+    padding-top: 25px;
   }
 
   #skill_catch img {
@@ -3963,7 +4089,8 @@ main{
   }
 
   #skill_catch h3{
-    font-size: 24px;
+    font-size: 18px;
+    padding-bottom: 15px;
   }
 
   /* Support Page */
@@ -3981,7 +4108,7 @@ main{
   }
 
   #head2 p {
-    font-size: 13px;
+    font-size: 10px;
     padding: 15px 5px;
     margin-top: 0;
   }
@@ -4013,7 +4140,7 @@ main{
   }
 
   #s_body2 p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 28px;
     padding: 15px 0;
   }
@@ -4106,15 +4233,15 @@ main{
   .manner1_container,
   .manner2_container,
   .manner3_container {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
 
   .manner_1 img,
   .manner_2 img,
   .manner_3 img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
 
 .manners > div {
@@ -4208,7 +4335,7 @@ main{
   .jec_para .details,
   .support_para3 .details{
     margin: 0 auto;  
-    margin-top: 15px;
+    margin-top: 25px;
     font-size: 14px;
     max-width: 180px;
   }
@@ -4232,13 +4359,14 @@ main{
   }
 
   #sup_catch h3{
-    font-size: 24px;
+    font-size: 18px;
   }
 
   /* Footer */
 
   #footer,#footer_1{
-    padding-top: 80px;
+    padding-top: 60px;
+    border-radius: 0;
   }
 
   #footer address,
@@ -4249,10 +4377,16 @@ main{
     line-height: 24px;
   }
 
+  #footer address ,
+  #footer_1 address{
+    font-size: 10px;
+    margin-left: 45px;
+  }
 
   .schl_logo{
     width: 200px;
     height: 30px;
+    margin-top: 15px;
     margin-bottom: 30px;
     margin-right: 35px;
   }
@@ -4260,18 +4394,16 @@ main{
   .web_logo {
     width: 75px;
     height: 75px;
-    left: 10px;
+    left: -15px;
+    margin-top: 15px;
   }
 
   .oc_button{
-    position: relative;
-    margin-left: 115px;
-    bottom: 230px;
+    position: absolute;
+    margin-left: 100px;
+    bottom: 250px;
     padding: 15px 20px;
-  }
-
-  .oc_button p{
-    font-size: 10px;
+    font-size: 12px;
   }
 
   #copy_right{
