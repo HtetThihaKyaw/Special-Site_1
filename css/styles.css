@@ -544,6 +544,16 @@ color: #000;
     line-height: 2.8;
 }
 
+@media (max-width: 1500px) {
+    .home_manners p {
+        padding-right: 0;
+    }
+
+    .home_manners img{
+      padding-left: 0 !important;
+    }
+}
+
 .home_manners p span {
     color: #fff;
     font-size: 26px;
@@ -3121,18 +3131,19 @@ main{
   .faq_header h3 {
     font-size: 24px;
     margin: 50px auto 20px;
-    padding: 50px 15px 25px 15px;
+    padding: 32px 15px 16px 15px;
   }
 
   .job_header h3{
     padding-top: 0 !important;
+    padding-bottom: 14px !important;
   }
 
 
   #head_s_para {
     grid-template-columns: 1fr;
     margin: 0 auto;
-    padding: 15px;
+    padding:0 15px 15px 15px;
   }
 
   .head_s_container,
@@ -3150,9 +3161,9 @@ main{
   }
 
   #head_s_para p {
-    margin: 30px 10px 20px 10px;
+    margin: 24px 10px 17px 10px;
     font-size: 12px;
-    line-height: 30px;
+    line-height: 28px;
     text-align: center;
   }
 
@@ -3160,7 +3171,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
-    padding: 10px;
+    padding: 0;
   }
 
   .job_header h3{
@@ -3169,8 +3180,8 @@ main{
 
   .jobs{
     margin-top: 50px;
-    padding-top: 10px;
-    padding-bottom: 35px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
   .job_header h3{
@@ -3231,160 +3242,136 @@ main{
 
 
 
-  .advantages_img > div {
-    flex: 1 1 45%;
-  }
-  .advantages_img img {
-    width: 100px;
-    height: 90px;
-  }
-  .advantages_img h4 {
-    font-size: 14px;
-  }
-  .adv_desc_display {
-    font-size: 13px;
-  }
-
-
-  .advantages_img {
-    flex-direction: column;
-  }
-  .advantages_img > div {
-    flex: 1 1 100%;
-  }
-  .advantages_img img {
-    width: 90px;
-    height: 80px;
-  }
-  .advantages_img h4 {
-    font-size: 16px;
-  }
-
-  .advantages h3{
-    padding-top: 0 !important;
-  }
-
-  
-  
-
-  .adv_desc_display {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.7);
-  margin-top: 0;
-  padding: 20px 10px 30px 10px;
-  text-align: center;
-  font-size: 12px;
-  color: #000;
-  line-height: 1.6;
-  font-weight: 500;
-  overflow: hidden;
+  .advantages {
+  margin-top: 50px;
+  padding-top: 0;
 }
 
+.advantages h3 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 16px !important;
+}
 
-  .advantages{
-    margin-top: 50px;
-    padding-top: 10x;
-  }
-
-  .advantages h3{
-    margin-top: 0 !important;
-  }
-
-  .advantages_img {
-    flex-wrap: nowrap;
-    flex-direction: row;
-    gap: 0;
-    margin-bottom: 0 !important;
-    margin-top: 0 !important;
-    padding: 0 5px 0 5px;
-    overflow-x: auto;
+.advantages_img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0;
+  margin: 0;
+  margin-bottom: 15px !important;
+  padding: 0 5px 0 5px;
+  overflow-x: auto;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: rgba(255, 255, 255, 0);
+}
 
 .advantages_img::-webkit-scrollbar {
   display: none;
 }
 
 .advantages_img > div {
-  flex: 0 0 auto;
+  flex: 1 1 25%;
+  max-width: 25%;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.advantages_img {
-  -ms-overflow-style: none;
-  scrollbar-width: none; 
+.advantages_img img {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 0;
 }
 
-  .advantages_img .desc{
-    display: none;
-  }
+.adv_1 img,
+.adv_2 img,
+.adv_3 img,
+.adv_4 img {
+  width: 55px;
+  height: 55px;
+}
 
-  .adv_desc_display{
-    display: block;
-  }
+.advantages_img h4 {
+  font-size: clamp(10px, 2vw, 16px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: black;
+  cursor: pointer;
+  transition: color 0.3s;
+  margin: 0 0 5px 0;
+  font-weight: 500;
+}
 
-  .adv_1,
-  .adv_2,
-  .adv_3,
-  .adv_4 {
-    background-color: rgba(255, 255, 255, 0.7);
-    max-width: 100%;
-    padding: 20px 20px 0 20px;
-    box-shadow: none;
-  }
+.advantages_img h4.active {
+  color: #494AE9;
+}
 
-  .advantages_img {
-  margin-bottom: 0; 
-  padding-bottom: 0;
+.adv_desc_display {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 0;
+  padding: 16px 10px 16px 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #000;
+  line-height: 1.4;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.advantages_img .desc {
+  display: none;
+}
+
+.adv_1,
+.adv_2,
+.adv_3,
+.adv_4 {
+  background-color: rgba(255, 255, 255, 0);
+  max-width: 100%;
+  padding: 20px 20px 0 20px;
+  box-shadow: none;
 }
 
 .adv_desc_display p {
   margin: 0;
 }
 
-
 .adv_1, .adv_2, .adv_3, .adv_4 {
   padding-bottom: 0;
 }
 
-  .adv_img_1,
-  .adv_img_2,
-  .adv_img_3,
-  .adv_img_4 {
-    width: 55px;
-    height: 55px;
-    margin-bottom: 0;
-  }
+.adv_img_1,
+.adv_img_2,
+.adv_img_3,
+.adv_img_4 {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 0;
+}
 
-  .adv_1 img,
-  .adv_2 img,
-  .adv_3 img,
-  .adv_4 img {
-    width: 55px;
-    height: 55px;
-  }
-
-  .adv_1 h4,
+.adv_1 h4,
 .adv_2 h4,
 .adv_3 h4,
-.adv_4 h4{
-  margin-top: 5px;
-  font-size: 12px;
+.adv_4 h4 {
+  margin-top: 0;
+  font-size: 10px;
   color: #000;
 }
 
-.advantages_img h4 {
-  color: black; 
-  cursor: pointer;
-  transition: color 0.3s;
-}
 
-.advantages_img h4.active {
-  color: #494AE9; 
-}
 
 
 
@@ -3392,15 +3379,16 @@ main{
   .home_manners {
     flex-direction: column;
     height: auto;
-    padding-bottom: 30px;
-    margin-top: 75px;
+    padding-bottom: 32px;
+    margin-top: 50px;
+    gap: 32px;
   }
 
   .home_manners p {
     padding: 0 20px;
     max-width: 100%;
     font-size: 18px;
-    line-height: 3;
+    line-height: 50px;
     text-align: center;
   }
 
@@ -3425,8 +3413,10 @@ main{
   }
 
   .map h3{
-    margin-top: 25px !important;
-    padding-top: 15px;
+    margin-top: 30px !important;
+    padding-top: 0;
+    margin-bottom: 32px;
+    padding-bottom: 0;
   }
 
   .map_img {
@@ -3444,17 +3434,20 @@ main{
 
   .map figure figcaption {
     font-size: 14px;
-    margin: 20px 0 0 0;
+    margin: 24px 0 0 0;
   }
 
   .slide{
-    margin-top: 25px;
-    margin-bottom: 15px !important;
+    margin-top: 50px;
+    margin-bottom: 32px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0;
     font-size: 24px;
   }
 
   .imgs_slide {
     height: 300px;
+    padding-top: 0;
   }
 
   .imgs_slide{
@@ -3476,13 +3469,16 @@ main{
   }
 
   .faq_header h3{
-    margin-top: 15px !important;
+    margin-top: 25px !important;
     padding-top: 25px !important;
+    margin-bottom: 32px;
+    padding-bottom: 0;
   }
 
   .faq_3 .container-block {
     max-width: 330px;
     margin-bottom: 50px;
+    margin-top: 0;
   }
 
   .faq_3 .text-blk.faq-questions {
@@ -4074,7 +4070,7 @@ main{
   .team_para .hotpage p,
   .team_para .main p {
     margin-right: 0;
-    line-height: 28px;
+    line-height: 25px;
   }
 
   #skill_catch{
@@ -4365,7 +4361,7 @@ main{
   /* Footer */
 
   #footer,#footer_1{
-    padding-top: 60px;
+    padding-top: 48px;
     border-radius: 0;
   }
 
@@ -4380,13 +4376,14 @@ main{
   #footer address ,
   #footer_1 address{
     font-size: 10px;
-    margin-left: 45px;
+    margin-left: 40px;
+    line-height: 20px;
   }
 
   .schl_logo{
     width: 200px;
     height: 30px;
-    margin-top: 15px;
+    margin-top: 16px;
     margin-bottom: 30px;
     margin-right: 35px;
   }
@@ -4395,7 +4392,7 @@ main{
     width: 75px;
     height: 75px;
     left: -15px;
-    margin-top: 15px;
+    margin-top: 16px;
   }
 
   .oc_button{
