@@ -162,46 +162,12 @@ body {
 }
 
 .head_kv img {
+  display: block;
     width: 100%;
-    height: 100%;
-    padding-top: 75px;
-    margin-bottom: 100px;
+    height: auto;
+    padding-top: 100px;
+    margin-bottom: 0;
 }
-
-.text1{
-    position: absolute;
-    top: 250px;
-    right: 360px;
-    font: bolder 48px 'Inter', sans-serif;
-    margin: 0;
-    text-align: center;
-    color: #fff;
-    /* text-shadow: 4px 4px 0 #494AE9; */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    text-shadow: 1px 1.5px 0 #86a0ff;
-background-color: rgba(73, 74, 233, 0.8);
-    padding: 15px;
-    line-height: 60px;
-    border-radius: 20px;
-}
-
-.text2{
-    position: absolute;
-    top: 500px;
-    right: 430px;
-    font: bold 36px 'Inter', sans-serif;
-    margin: 0;
-    text-align: center;
-    color: #fff;
-    /* text-shadow: 4px 4px 0 #494AE9; */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    text-shadow: 1px 1.5px 0 #86a0ff;
-background-color: rgba(73, 74, 233, 0.8);
-    padding: 15px;
-    border-radius: 20px;
-}
-
-
 
 
 /* Head Paragraph */
@@ -2237,7 +2203,9 @@ main{
          /* background: linear-gradient(to right,  #afc1ff 67%,#E6F4F1 40%, #B8C6F5 50%); */
 }
 
-
+hr .mobile{
+  display: none;
+}
 
 #kv_head2 {
     margin-top: 100px;
@@ -3107,7 +3075,7 @@ main{
   /* Home Page */
   .head_kv img {
     padding-top: 60px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 
   .text1 {
@@ -3301,7 +3269,9 @@ main{
   height: 55px;
 }
 
+
 .advantages_img h4 {
+  padding-bottom: 3px;
   font-size: clamp(10px, 2vw, 16px);
   white-space: nowrap;
   overflow: hidden;
@@ -3311,27 +3281,50 @@ main{
   transition: color 0.3s;
   margin: 0 0 5px 0;
   font-weight: 500;
+  position: relative;   
+  display: inline-block; 
+}
+
+.advantages_img h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;                 
+  width: 0;
+  height: 1px;
+  background-color: #494AE9;
+  transition: width 0.3s ease;
 }
 
 .advantages_img h4.active {
   color: #494AE9;
 }
 
+.advantages_img h4.active::after {
+  width: 100%;               
+}
+
+
 .adv_desc_display {
-  display: block;
+  display: flex;              
+  flex-direction: column;     
+  justify-content: center;    
+  align-items: center;        
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.7);
   margin-top: 0;
-  padding: 16px 10px 16px 10px;
-  text-align: center;
+  padding: 16px 10px;
   font-size: 12px;
   color: #000;
   line-height: 1.45;
   font-weight: 530;
+  height: 120px;              
   overflow: hidden;
+  text-align: center;         
 }
+
 
 .advantages_img .desc {
   display: none;
@@ -3610,7 +3603,7 @@ main{
   .side_1 img,
   .side_2 img,
   .side_3 img {
-    width: 100%;
+    width: 95%;
     height: 200px;
   }
 
@@ -3656,12 +3649,6 @@ main{
     grid-template-areas: 1fr 1fr 1fr;
   }
 
-  .comment_1 {
-    flex-direction: row;
-    gap: 20px;
-    padding: 5px;
-    margin-bottom: 50px;
-  }
 
   .comment_p1,
   .comment_p2,
@@ -3703,17 +3690,48 @@ main{
     height: 60px;
   }
 
-  .s_comment_1, 
-  .s_comment_2, 
-  .s_comment_3, 
-  .s_comment_4, 
-  .s_comment_5, 
-  .s_comment_6, 
-  .s_comment_7, 
-  .s_comment_8, 
-  .s_comment_9{
-    padding: 5px;
-  }
+.comment_1 {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding: 1.25rem;
+  margin-bottom: 3.125rem; /* 50px */
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.s_comment_1, 
+.s_comment_2, 
+.s_comment_3, 
+.s_comment_4,
+.s_comment_5, 
+.s_comment_6, 
+.s_comment_7, 
+.s_comment_8, 
+.s_comment_9 {
+  flex: 1 1 0;
+  margin-top: 0.5rem;
+  padding: 0.625rem;
+  min-width: 200px;
+  box-shadow: -0.25rem 0 0.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.s_comment_4 p, 
+.s_comment_5 p,
+.s_comment_6 p{
+  margin-top: 10px;
+}
+
+  /* .s_comment_2 {
+  padding-left: 10px;
+  display: flex;          
+  justify-content: center; 
+  align-items: center;     
+  height: 100px;         
+  } */
 
   .comment_p1 p, 
   .comment_p2 p,
