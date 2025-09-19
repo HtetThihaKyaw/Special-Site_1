@@ -2237,6 +2237,8 @@ main{
          /* background: linear-gradient(to right,  #afc1ff 67%,#E6F4F1 40%, #B8C6F5 50%); */
 }
 
+
+
 #kv_head2 {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -3520,21 +3522,24 @@ main{
   /* Teacher Page */
   .teacher_head {
     margin-top: 65px;
+    margin-bottom: 50px;
     height: auto;
-    padding-top: 20px;
-    padding-bottom: 25px;
+    padding-top: 48px;
+    padding-bottom: 32px;
     border-radius: 0;
   }
 
   .teacher_head h1 {
     font-size: 24px;
     padding: 15px;
+    padding-top: 0;
+    padding-bottom: 32px;
     margin: 30px auto 20px;
   }
 
   .teacher_head p {
     font-size: 10px;
-    padding: 15px 5px;
+    padding:0 5px 16px 5px;
     margin: 0;
   }
 
@@ -3542,6 +3547,7 @@ main{
  .sekine_icon figcaption, 
  .mori_icon figcaption{
   font-size: 12px;
+  margin-top: 24px;
  }
 
  .teachers{
@@ -3574,6 +3580,8 @@ main{
     grid-template-columns: 1fr;
     height: auto;
     padding:0;
+    margin-top: 0;
+    gap: 16px;
   }
 
   .side_1,
@@ -3581,8 +3589,13 @@ main{
   .side_3 {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    gap: 10px;
+    gap: 8px;
     padding: 0 10px 15px 10px;
+  }
+
+  .side_2,
+  .side_3 {
+    margin-top: 50px;
   }
 
   .osanai_container_1,
@@ -3609,13 +3622,15 @@ main{
   .t_section_2 h2, 
   .t_section_3 h2{
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   }
 
   .t_section_1 p, 
   .t_section_2 p, 
   .t_section_3 p{
   margin-top: 0;
+  margin-bottom: 16px;
   font-size: 10px;
   }
 
@@ -3623,6 +3638,8 @@ main{
   .t_content_2,
   .t_content_3 {
     padding: 0 15px;
+    margin-bottom: 24px;
+    gap: 8px;
   }
 
   .comments{
@@ -3634,6 +3651,7 @@ main{
     flex-direction: row;
     gap: 20px;
     padding: 5px;
+    margin-bottom: 50px;
   }
 
   .comment_p1,
@@ -3706,7 +3724,7 @@ main{
 
   .teachers_catch{
     border-radius: 0;
-    margin-top: 50px;
+    margin-top: 0;
   }
 
   .teachers_catch img {
@@ -3717,24 +3735,26 @@ main{
 
   .teachers_catch h3{
     font-size: 18px;
-    padding-bottom: 25px;
+    padding-bottom: 48px;
+    margin-bottom: 0;
   }
 
 
   /* Interview Page */
   .int_head {
-    padding: 15px;
+    padding:0 15px 18px 15px;
     margin-top: 65px !important;
   }
 
   .int_head h1 {
     font-size: 24px;
-    padding: 15px;
+    padding: 48px 15px 32px 15px;
   }
 
   .int_head h2 {
     font-size: 10px;
-    margin: 20px 10px;
+    margin: 0;
+    padding: 0 5px 16px 5px;
   }
 
   .icons {
@@ -3759,6 +3779,7 @@ main{
   position: relative;
 }
 
+
 .soyeon_p,
 .htetaung_p,
 .eguchi_p,
@@ -3766,6 +3787,7 @@ main{
 .shitara_p{
   font-size: 10px;
   white-space: nowrap;
+  margin-bottom: 8px;
 }
 
   .shitara_container,
@@ -3778,6 +3800,7 @@ main{
     align-items: center;
     position: relative;
     transform: translateX(15px);
+    margin-left: 5px;
   }
 
 
@@ -3789,7 +3812,8 @@ main{
   
 .icons figcaption {
   font-size: 10px;
-  padding-bottom: 30px;
+  padding-top: 16px;
+  padding-bottom: 32px;
   text-align: center;
 }
 
@@ -3802,6 +3826,7 @@ main{
     height: auto;
     margin-top: 50px;
     margin-bottom: 0;
+    gap: 16px;
   }
 
   .shitara_container_2,
@@ -3819,7 +3844,7 @@ main{
   .content_3, 
   .content_4, 
   .content_5{
-    gap: 10px;
+    gap: 8px;
     padding:0 5px 5px 5px;
 
   }
@@ -3844,13 +3869,23 @@ main{
   font-size: 18px;
 }
 
+
+.section_1,
+.section_2,
+.section_3,
+.section_4,
+.section_5 {
+box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
+}
+
 .section_1 h2,
 .section_2 h2,
 .section_3 h2,
 .section_4 h2,
 .section_5 h2 {
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .sidebar_1 .int_small,
@@ -3868,6 +3903,8 @@ main{
 .section_4 p,
 .section_5 p {
   font-size: 10px;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
   .sidebar_1 img,
@@ -3886,7 +3923,6 @@ main{
   .friends_catch{
     margin-top: 50px;
     border-radius: 0;
-    padding-top: 5px;
   }
 
   .friends_catch img {
@@ -3898,33 +3934,35 @@ main{
 
   .friends_catch h3{
     font-size: 18px;
-    padding-bottom: 15px;
+    padding-bottom: 48px;
+    margin-bottom: 0;
   }
 
   /* Skills Page */
   #kv_head3 {
     margin-top: 65px;
+    margin-bottom: 50px;
     height: auto;
-    padding-top: 20px;
+    padding-top: 48px;
     padding-bottom: 0;
   }
 
   #head3 h1 {
     font-size: 24px;
-    padding: 15px;
-    margin: 0 auto 10px !important;
+    padding: 0 15px 32px 15px;
+    margin: 0 auto !important;
   }
 
   #head3 p {
     font-size: 10px;
-    padding: 15px 5px;
+    padding: 0 5px 16px 5px;
     margin-top: 0;
   }
 
  #body3 {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 20px;
+        gap: 16px;
         padding: 15px;
         padding-top: 0 !important;
         margin: 0;
@@ -3937,7 +3975,7 @@ main{
   #body3 .skill_img_container_1 {
     width: 100%;
     height: 200px;
-    margin: 20px auto;
+    margin: 5px auto;
   }
 
   #s_body3 {
@@ -3948,14 +3986,14 @@ main{
   #s_body3 h3 {
     margin: 0 auto;
     font-size: 18px;
-    padding: 15px 20px;
+    padding: 16px 20px;
   }
 
   #s_body3 p {
     font-size: 12px;
-    padding-right: 0;
     line-height: 28px;
-    padding: 15px 0;
+    padding: 0 0 32px 0;
+    margin: 0;
   }
 
   .mobile{
@@ -3965,7 +4003,9 @@ main{
 
   .project_teams h3 {
     font-size: 18px;
-    margin-top: -30px !important;
+    /* margin-top: -30px !important */
+    padding-top: 0;
+    padding-bottom: 24px;
   }
 
 .project_teams p {
@@ -3977,12 +4017,12 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
-    margin: 20px 0;
+    margin: 24px 0 0 0;
   }
 
   .teams figcaption {
     font-size: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
     padding-top: 0;
   }
 
@@ -4001,7 +4041,7 @@ main{
   }
 
   .team_para {
-    padding: 15px;
+    padding:0 15px 0 15px;
   }
 
   .team_para .event,
@@ -4009,8 +4049,8 @@ main{
   .team_para .seminar_t,
   .team_para .hotpage,
   .team_para .main{
-    margin-top: 35px;
-    padding-bottom: 15px;
+    margin-top: 32px;
+    padding-bottom: 24px;
   }
 
   .event_para{
@@ -4033,8 +4073,9 @@ main{
   .team_para .main p{
     font-size: 10px;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 16px;
     letter-spacing: 1px;
+    margin-bottom: 0;
   }
 
   .event_icon::after,
@@ -4090,29 +4131,35 @@ main{
   }
 
   /* Support Page */
+
+  .pc{
+  display: none;
+}
+
   #kv_head2 {
     margin-top: 65px;
     margin-bottom: 50px;
     height: auto;
-    padding-top: 20px;
+    padding-top: 48px;
+    padding-bottom: 0;
   }
 
   #head2 h1 {
     font-size: 24px;
-    padding: 15px;
-    margin: 0px auto 10px !important;
+    padding: 0 15px 32px 15px;
+    margin: 0 auto !important;
   }
 
   #head2 p {
     font-size: 10px;
-    padding: 15px 5px;
+    padding: 0 5px 16px 5px;
     margin-top: 0;
   }
 
   #body2 {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 20px;
+        gap: 16px;
         padding: 15px;
         padding-top: 0 !important;
         margin: 0;
@@ -4121,7 +4168,7 @@ main{
   #body2 .sup_img_container_1 {
     width: 100%;
     height: 200px;
-    margin: 20px auto;
+    margin: 5px auto;
   }
 
   #s_body2 {
@@ -4132,19 +4179,20 @@ main{
   #s_body2 h3 {
     margin: 0 auto;
     font-size: 18px;
-    padding: 15px 20px;
+    padding: 16px 20px;
   }
 
   #s_body2 p {
     font-size: 12px;
     line-height: 28px;
-    padding: 15px 0;
+    padding: 0 0 32px 0;
+    margin: 0;
   }
 
   .hr_manners h4 {
     margin-left: 0;
     font-size: 20px;
-    padding: 15px;
+    padding: 0;
   }
 
   .manners {
@@ -4195,14 +4243,12 @@ main{
 
 .manner-desc {
   display: block;
-  background-color: #494AE9;
-  border-radius: 0 0 20px 20px;
+  background-color: rgba(255, 255, 255, 0.7);
   margin-top: 0;
-  padding: 15px;
-  padding-top: 25px;
+  padding:24px 16px;
   text-align: center;
-  font-size: 14px;
-  color: #fff;
+  font-size: 12px;
+  color: #000;
   line-height: 1.6;
   font-weight: 500;
   transform: translateX(0);
@@ -4214,30 +4260,29 @@ main{
   .manner_3 {
     max-width: 100%;
     padding: 10px;
-  background-color: #fff;
+    background-color: rgba(255, 255, 255, 0);
   box-shadow: none;
-  border-radius: 20px 20px 0 0;
   padding-top: 20px !important;
   }
 
   .manner_1 h3, .manner_2 h3, .manner_3 h3 {
-  font-size: 16px;
-  color: #494AE9;
+  font-size: 14px;
+  color: #000;
   text-decoration: none;
   }
 
   .manner1_container,
   .manner2_container,
   .manner3_container {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
 
   .manner_1 img,
   .manner_2 img,
   .manner_3 img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
 
 .manners > div {
@@ -4252,14 +4297,17 @@ main{
 
 
 .manners > div.active {
-  background-color: #494AE9; 
-  border-radius: 20px 20px 0 0;  
+    background-color: rgba(255, 255, 255, 0);
   transform: translateY(0);   
   transition: opacity 0.7s ease, transform 0.7s ease; 
 }
 
 .manners > div.active h3 {
-  color: #fff;
+  color: #494AE9;
+}
+
+.manner_2, .manner_3{
+  border-left: none;
 }
 
 
@@ -4270,7 +4318,7 @@ main{
   .window,
   .welcome {
     grid-template-columns: 1fr;
-    padding: 15px;
+    padding:0 15px;
   }
 
   .jec{
@@ -4299,6 +4347,10 @@ main{
     margin: 0 auto;
   }
 
+  .window_para h3{
+    padding-bottom: 0;
+  }
+
   .jec_para,
   .window_para,
   .welcome_para{
@@ -4308,11 +4360,11 @@ main{
   .jec_para p,
   .window_para p,
   .welcome_para p {
-    font-size: 13px;
+    font-size: 12px;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 16px;
     padding-right: 0 !important;
-    line-height: 25px;
+    line-height: 23px;
   }
 
 
@@ -4331,15 +4383,14 @@ main{
   .jec_para .details,
   .support_para3 .details{
     margin: 0 auto;  
-    margin-top: 25px;
-    font-size: 14px;
-    max-width: 180px;
+    margin-top: 24px;
+    font-size: 12px;
+    max-width: 160px;
   }
 
   #sup_catch{
     margin-top: 50px !important;
-    padding: 0 10px;
-    padding-top: 40px !important;
+    padding: 32px 10px 16px 10px;
   }
 
   .sup_img_container_2 {
@@ -4355,6 +4406,7 @@ main{
   }
 
   #sup_catch h3{
+    padding-top: 16px;
     font-size: 18px;
   }
 
@@ -4362,6 +4414,7 @@ main{
 
   #footer,#footer_1{
     padding-top: 48px;
+    padding-bottom: 16px;
     border-radius: 0;
   }
 
@@ -4384,7 +4437,7 @@ main{
     width: 200px;
     height: 30px;
     margin-top: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     margin-right: 35px;
   }
 
@@ -4393,12 +4446,13 @@ main{
     height: 75px;
     left: -15px;
     margin-top: 16px;
+    margin-bottom: 0;
   }
 
   .oc_button{
     position: absolute;
     margin-left: 100px;
-    bottom: 250px;
+    bottom: 230px;
     padding: 15px 20px;
     font-size: 12px;
   }
