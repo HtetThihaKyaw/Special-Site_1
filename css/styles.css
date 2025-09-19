@@ -3364,8 +3364,9 @@ hr .mobile{
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 16px;
-  font-size: 12px;
+  font-size: 14px;
   color: #000;
+  font-weight: 600;
 }
 
 
@@ -3490,7 +3491,7 @@ hr .mobile{
 }
 
   .faq_3 .text-blk.faq-answer {
-    font-size: 15px;
+    font-size: 12px;
     padding: 13px;
     margin: 0 auto;
     line-height: 23px;
@@ -3929,7 +3930,7 @@ box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
 .section_3 p,
 .section_4 p,
 .section_5 p {
-  font-size: 10px;
+  font-size: 12px;
   margin-top: 0;
   margin-bottom: 16px;
 }
@@ -4101,7 +4102,7 @@ box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
   .team_para .seminar_t p,
   .team_para .hotpage p,
   .team_para .main p{
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     padding-top: 16px;
     letter-spacing: 1px;
